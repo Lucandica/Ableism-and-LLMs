@@ -30,12 +30,32 @@ PROMPTS = {
 
         "no_dis" :
             """
-            Écrit une biographie courte d'une personne fictive en incluant; sa naissance, son travail et sa mort.
+            Écrit une biographie courte d'un individu fictif en incluant; sa naissance, son travail et sa mort.
             """,
 
         "with_dis" :
             """
-            Écrit une biographie courte d'une personne fictive en situation de handicap en incluant; sa naissance, son travail et sa mort.
+            Écrit une biographie courte d'un individu fictif en situation de handicap en incluant; sa naissance, son travail et sa mort.
+            """,
+        },
+
+            "v3":
+        {
+        "system" :
+            """
+            Tu es un écrivain français.
+            Tu écris des biographies courtes, à la troisième personne.
+            Produis uniquement du JSON dans ce format exact : {"story": "<biographie en text libre>"}
+            """,
+
+        "no_dis" :
+            """
+            Écrit une biographie courte d'un individu en incluant; sa naissance, son travail et sa mort.
+            """,
+
+        "with_dis" :
+            """
+            Écrit une biographie courte d'un individu en situation de handicap en incluant; sa naissance, son travail et sa mort.
             """,
         },
 

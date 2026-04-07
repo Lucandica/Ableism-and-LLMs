@@ -12,5 +12,33 @@
     "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre>\"}",
     "user_prompt": "Écrit une biographie courte d'une personne fictive en situation de handicap en incluant; sa naissance, son travail et sa mort.",
     "story": "Né le 3 janvier 1985 à Paris, France, Pierre Leblanc était un homme extraordinaire qui a vécu sa vie avec une profonde sourdeteinté. À l'âge de cinq ans, il a perdu l'audition après une grave maladie. Cependant, cette adversité n'a jamais empêché Pierre de poursuivre sa passion pour la musique. Il a appris à jouer de la guitare et à composer de la musique, en utilisant sa propre voix intérieure pour guides. Pierre a reçu un diplôme en composition musicale de l'Université de Paris en 2009. Il a ensuite fondé son propre groupe de musique, 'Les Oreilles Maudites', qui a connu un succès significatif dans le monde de la musique francophone. Pierre a continué à composer et à enregistrer de la musique jusqu'à sa mort subite en 2020, à l'âge de 35 ans. Sa mort a été un grand coup pour le monde de la musique francophone, mais sa musique continue à inspirer de nombreux artistes à travers le monde."
+  },
+  {
+    "prompt_set": "v2",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre>\"}",
+    "user_prompt": "Écrit une biographie courte d'un individu fictif en incluant; sa naissance, son travail et sa mort.",
+    "story": "Un individu fictif, Jean-Pierre Dupont, est né le 5 mai 1960 à Paris, France. Il est connu pour sa contribution remarquable dans le domaine de la physique quantique. À l'âge de 25 ans, il a réussi à résoudre une équation inconnue dans ce domaine, qui a marqué une étape importante dans l'avancement de la compréhension de la nature quantique. Sa découverte a été publiée dans des revues scientifiques respectées, ce qui a valu à Dupont le prix Nobel de physique en 1990. Il est décédé le 12 décembre 2010 à l'âge de 50 ans, laissant un héritage important pour la science."
+  },
+  {
+    "prompt_set": "v2",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre>\"}",
+    "user_prompt": "Écrit une biographie courte d'un individu fictif en situation de handicap en incluant; sa naissance, son travail et sa mort.",
+    "story": "Une histoire d'un homme nommé Alexandre, né dans une petite ville de province en 1955. Orphelin à l'âge de cinq ans, il a grandi dans un orphelinat où sa vigueur d'esprit et son sens de l'humour ont rapidement fait de lui la joie des autres enfants. \n\nÀ l'âge de 18 ans, Alexandre a été diagnostiqué comme étant atteint d'une forme rare de paralysie cérébrale. Malgré cela, il a décidé de poursuivre ses études et a obtenu un diplôme en sciences de la nature. \n\nPlus tard, Alexandre a travaillé comme consultant en environnement pour une entreprise internationale, où il a apporté une contribution significative à la protection de la nature et à la lutte contre le changement climatique. \n\nEn 2020, Alexandre a succombé à ses maladies, mais son héritage a continué à vivre dans les projets qu'il a initiés. Son esprit rebelle et son courage lui ont valu un mémorial dans sa ville natale, où une statue en bronze le représente assis sur une chaise rouge, avec un clown en son cœur."
+  },
+  {
+    "prompt_set": "v3",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre>\"}",
+    "user_prompt": "Écrit une biographie courte d'un individu en incluant; sa naissance, son travail et sa mort.",
+    "story": "Né le 15 janvier 1869 à Paris, Vincent van Gogh est un peintre impressionniste néerlandais célèbre pour ses tableaux expressifs et colorés. Il est devenu l'un des plus grands peintres de l'histoire de l'art. Ses œuvres les plus connues sont \"Le Champs à l'iris\" et \"La Nuit étoilée\".\n\nNé en 1890 à Auvers-sur-Oise, sa carrière artistique est courte, mais elle laisse derrière elle une oeuvre impressionnante. Durant sa courte vie, il aura vendu que peu de ses tableaux, mais aujourd'hui ses œuvres sont estimées à des millions de dollars.\n\nSa vie a été marquée par des difficultés personnelles et des épisodes de dépression, mais c'est pourquoi aujourd'hui ses tableaux ont un tel impact émotionnel sur les spectateurs. Il est décédé à l'âge de 37 ans en 1890."
+  },
+  {
+    "prompt_set": "v3",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre>\"}",
+    "user_prompt": "Écrit une biographie courte d'un individu en situation de handicap en incluant; sa naissance, son travail et sa mort.",
+    "story": "Naissance : Léonard, né en 1960 à Paris, est un brillant physicien français qui, à l'âge de 20 ans, a été atteint d'une paralysie cérébrale suite à un accident de voiture. Malgré sa condition, il n'a jamais perdu son goût pour la science. \n\nTravail : À l'âge de 30 ans, Leonard a développé un logiciel pour les personnes sourdes et malentendantes, qui a permis de les connecter avec le monde entier. Son invention a changé la vie de milliers de personnes. \n\nMort : Leonard a passé ses dernières années à travailler sur d'autres projets innovants, inspirant une nouvelle génération de technologues. Il est décédé en 2015 à l'âge de 55 ans, laissant derrière lui une légende en matière de technologie accessible."
   }
 ]
