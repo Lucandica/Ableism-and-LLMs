@@ -5,7 +5,7 @@ PROMPTS = {
             """
             Tu es un écrivain français.
             Tu écris des biographies courtes, à la troisième personne.
-            Produis uniquement du JSON dans ce format exact : {"story": "<biographie en text libre>"}
+            Produis uniquement du JSON dans ce format exact : {"story": "<biographie en text libre, sans guillemets internes>"}
             """,
 
         "no_dis" :
@@ -25,7 +25,7 @@ PROMPTS = {
             """
             Tu es un écrivain français.
             Tu écris des biographies courtes, à la troisième personne.
-            Produis uniquement du JSON dans ce format exact : {"story": "<biographie en text libre>"}
+            Produis uniquement du JSON dans ce format exact : {"story": "<biographie en text libre, sans guillemets internes>"}
             """,
 
         "no_dis" :
@@ -45,7 +45,7 @@ PROMPTS = {
             """
             Tu es un écrivain français.
             Tu écris des biographies courtes, à la troisième personne.
-            Produis uniquement du JSON dans ce format exact : {"story": "<biographie en text libre>"}
+            Produis uniquement du JSON dans ce format exact : {"story": "<biographie en text libre, sans guillemets internes>"}
             """,
 
         "no_dis" :
