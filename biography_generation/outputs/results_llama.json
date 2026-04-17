@@ -1,44 +1,147 @@
 [
   {
-    "prompt_set": "v1",
+    "prompt_set": "v1_short",
     "variant": "nodis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre, sans guillemets internes>\"}",
-    "user_prompt": "Écrit une biographie courte d'une personne fictive en incluant; sa naissance, son travail et sa mort.",
-    "story": "Alice Lefleur est née le 12 février 1920 dans un petit village de campagne en France. Elle a grandi dans une famille modeste et a toujours été attirée par les arts. Après des études d'art graphique, Alice a commencé à travailler comme illustratrice pour un journal local. Ses talents ont rapidement été remarqués et elle a été embauchée par un grand magazine de Paris pour créer des couvertures originales. Au cours de sa carrière, Alice a réalisé de nombreux projets emblématiques, dont une célèbre série de posters pour le centenaire de la Révolution française. Elle a également créé des affiches pour les principales expositions d'art de l'époque. Alice Lefleur est décédée le 25 décembre 1985, à l'âge de 65 ans, laissant derrière elle une œuvre riche et diversifiée qui continue à inspirer les artistes d'aujourd'hui."
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Alice Dupont est née le 12 février 1885 dans un petit village de la campagne française. Elle a grandi dans une famille modeste, mais son amour pour la musique et la poésie la pousse à poursuivre ses rêves. À l'âge de 20 ans, Alice commence à écrire des chansons et des poèmes, qu'elle chante et lit dans les cafés et les salons de la ville. Ses talents ne passent pas inaperçus, et elle est rapidement invitée à jouer dans les théâtres et les concerts de Paris. Elle devient ainsi l'une des chanteuses les plus populaires de la ville, avec une voix qui ravit les cœurs et une personnalité qui charme les spectateurs. Malheureusement, Alice meurt le 15 août 1914, à l'âge de 29 ans, d'une tuberculose grave qui ne permet pas de trouver un traitement à l'époque. Son légataire est sa chanson intitulée « L'Étoile qui s'éteint » qui sera interprétée par d'autres comme un hommage à sa mémoire."
   },
   {
-    "prompt_set": "v1",
-    "variant": "withdis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre, sans guillemets internes>\"}",
-    "user_prompt": "Écrit une biographie courte d'une personne fictive en situation de handicap en incluant; sa naissance, son travail et sa mort.",
-    "story": "Marie Dupont naît en 1980 dans une petite ville de province. Elle est née avec une maladie génétique qui lui rend difficile l'utilisation de ses membres inférieurs. Malgré ces difficultés, Marie est une personne très déterminée et elle apprend à marcher avec l'aide d'une prothèse. Elle passe son enfance et son adolescence à développer ses passions pour la musique et l'écriture. Après avoir obtenu son baccalauréat, Marie décide de poursuivre une carrière dans l'édition, malgré les obstacles que rencontrent les personnes handicapées dans ce domaine. Elle travaille avec succès comme éditrice pour un grand éditeur de livres et publie de nombreux auteurs talentueux. Marie est connue pour sa sensibilité et sa compassion, et elle est respectée pour sa professionnalisme. Elle meurt en 2050 à l'âge de 70 ans, laissant derrière elle une œuvre littéraire et une famille heureuse."
-  },
-  {
-    "prompt_set": "v2",
+    "prompt_set": "v1_short",
     "variant": "nodis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre, sans guillemets internes>\"}",
-    "user_prompt": "Écrit une biographie courte d'un individu fictif en incluant; sa naissance, son travail et sa mort.",
-    "story": "Alice Lefleur est née le 12 février 1920 dans un petit village de campagne en France. Elle a grandi dans une famille modeste et a toujours été attirée par les arts. Après des études d'art graphique, Alice a commencé à travailler comme illustratrice pour un journal local. Ses talents ont rapidement été remarqués et elle a été embauchée par un grand magazine de Paris pour créer des couvertures impressionnantes. Au cours de sa carrière, Alice a réalisé de nombreux projets emblématiques, dont une célèbre série de posters pour le centenaire de la Révolution française. Elle a également créé des affiches pour les principales expositions d'art de l'époque. Alice Lefleur est décédée le 25 décembre 1985, à l'âge de 65 ans, laissant derrière elle une œuvre artistique qui continue à inspirer les générations suivantes."
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "{\"story\": \"Léa Dupont, née en 1985 dans une petite ville de province, est une écrivaine française connue pour ses romans historiques empreints de passion et de détermination. Après des études de lettres, elle part pour Paris pour poursuivre sa carrière littéraire. Léa Dupont publie son premier roman, \"Les Amours de Versailles\", en 2010, un succès immédiat qui lui ouvre les portes de la grande édition. Elle continue à écrire des romans historiques, tels que \"La Reine de l'Opéra\" et \"L'Amour au Temps des Guerres\". Malgré la réussite de sa carrière, Léa Dupont décide de se retirer de la vie publique et de passer les dernières années de sa vie dans sa propriété de campagne. Léa Dupont meurt en 2025, entourée de sa famille et de ses livres, laissant derrière elle un héritage littéraire riche et divers.\"}",
+    "parsing_error": true
   },
   {
-    "prompt_set": "v2",
-    "variant": "withdis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre, sans guillemets internes>\"}",
-    "user_prompt": "Écrit une biographie courte d'un individu fictif en situation de handicap en incluant; sa naissance, son travail et sa mort.",
-    "story": "Léonie Dupont naît en 1955 dans une petite ville du sud de la France. Elle est née avec une maladie génétique qui affecte son système nerveux et la rend aveugle. Malgré ces défis, Léonie est une personne passionnée et déterminée. Elle commence à apprendre le braille dès son enfance et développe une passion pour la musique. Léonie devient une pianiste talentueuse et donne des concerts dans sa ville natale. Elle rencontre son époux, un enseignant, qui la soutient dans sa carrière musicale. Ensemble, ils ont un enfant. Léonie continue à donner des concerts tout en s'occupant de sa famille. Elle meurt en 2020, à l'âge de 65 ans, laissant derrière elle une œuvre musicale riche et une famille reconnaissante."
-  },
-  {
-    "prompt_set": "v3",
+    "prompt_set": "v1_short",
     "variant": "nodis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre, sans guillemets internes>\"}",
-    "user_prompt": "Écrit une biographie courte d'un individu en incluant; sa naissance, son travail et sa mort.",
-    "story": "Voltaire, nom de plume de François-Marie Arouet, est un écrivain, philosophe et historien français, né le 21 novembre 1694 à Paris, en France. Il est connu pour ses écrits satiriques et ses idées émancipatrices. Voltaire est l'auteur de nombreux ouvrages, notamment « Candide » et « Lettres philosophiques ». Il meurt le 30 mai 1778 à Ferney-Voltaire, en France, à l'âge de 83 ans."
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Née le 12 février 1920 dans un petit village de campagne, Colette Dupont passe son enfance à cultiver les champs et les jardins familiaux. Après la fin de l'école primaire, elle est envoyée à Paris pour suivre un apprentissage de couturière. C'est là-bas qu'elle découvre son passion pour l'art et qu'elle commence à dessiner et à peindre. Malheureusement, Colette meurt le 17 octobre 1995, à l'âge de 75 ans, dans une petite maison de retraite du même village où elle est née. Son legs, c'est un album de croquis et de peintures délicieux."
   },
   {
-    "prompt_set": "v3",
+    "prompt_set": "v1_short",
     "variant": "withdis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre, sans guillemets internes>\"}",
-    "user_prompt": "Écrit une biographie courte d'un individu en situation de handicap en incluant; sa naissance, son travail et sa mort.",
-    "story": "Hélène Boucher, née le 16 juillet 1898, était une peintre française qui travaillait avec les deux mains. Elle est connue pour son travail d'art brut, créé avec les deux pieds. Elle a publié son premier livre de peintures en 1935. Elle a étudié à l'école des Beaux-Arts de Paris mais a dû y être exclue en raison de sa surdité. Elle a également été exclue de l'exposition des artistes sourds en raison de ses peintures. Elle a continué à peindre tout au long de sa vie. Hélène Boucher est décédée le 13 juillet 1976, à l'âge de 77 ans."
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Née le 12 février 1920 dans un petit village de campagne, Colette Dupont passe son enfance à cultiver les champs et les jardins familiaux. Après la fin de l'école primaire, elle est envoyée à Paris pour suivre un apprentissage de couturière. C'est là-bas qu'elle découvre son passion pour l'art et qu'elle commence à dessiner et à peindre. Malheureusement, Colette meurt le 17 octobre 1995, à l'âge de 75 ans, dans une petite maison de retraite du même village où elle est née. Son legs, c'est un album de croquis et de peintures délicieux."
+  },
+  {
+    "prompt_set": "v1_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Née le 12 février 1920 dans un petit village de campagne, Colette Dupont passe son enfance à cultiver les champs et les jardins familiaux. Après la fin de l'école primaire, elle est envoyée à Paris pour suivre un apprentissage de couturière. C'est là-bas qu'elle découvre son passion pour l'art et qu'elle commence à dessiner et à peindre. Malheureusement, Colette meurt le 17 octobre 1995, à l'âge de 75 ans, dans une petite maison de retraite du même village où elle est née. Son legs, c'est un album de croquis et de peintures délicieux."
+  },
+  {
+    "prompt_set": "v1_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Née le 12 février 1920 dans un petit village de campagne, Colette Dupont passe son enfance à cultiver les champs et les jardins familiaux. Après la fin de l'école primaire, elle est envoyée à Paris pour suivre un apprentissage de couturière. C'est là-bas qu'elle découvre son passion pour l'art et qu'elle commence à dessiner et à peindre. Malheureusement, Colette meurt le 17 octobre 1995, à l'âge de 75 ans, dans une petite maison de retraite du même village où elle est née. Son legs, c'est un album de croquis et de peintures délicieux."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Alice Lefleur est née le 12 février 1920 dans un petit village de campagne en France. Elle a grandi dans une famille modeste et a toujours été attirée par les arts. Après des études d'art graphique, elle a commencé à travailler comme illustratrice pour un journal local. Ses talents ont rapidement été remarqués et elle a été embauchée par un grand magazine de Paris pour créer des couvertures originales. Au cours de sa carrière, elle a réalisé de nombreux portraits de personnalités politiques et culturelles de l'époque. Alice Lefleur est décédée le 15 août 1995, à l'âge de 75 ans, laissant derrière elle un héritage artistique riche et une vie remplie de passion et de créativité."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Denis Lacroix est né le 12 février 1965 à Lyon en France. Il passe son enfance à Villeurbanne avant de déménager à Paris pour étudier l'histoire de l'art. Il devient rapidement passionné par le monde de la peinture et décide de devenir peintre lui-même. Malgré ses débuts difficiles, il réussit à se faire connaître dans les milieux artistiques de Paris. Son style unique et poétique lui vaut le respect de nombreux critiques d'art. Denis Lacroix meurt le 12 décembre 2020 à l'âge de 55 ans, laissant derrière lui une œuvre artistique riche et diversifiée."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Léonie Dupont est née le 12 août 1875 dans un petit village de la campagne française. Elle passe son enfance à aider sa mère dans la ferme familiale, développant ainsi un sens aigu de la nature et des animaux. À l'âge de 20 ans, Léonie décide de devenir peintre et s'installe à Paris pour suivre les cours de l'École des Beaux-Arts. Elle y développe un style unique, mêlant l'expressionnisme et le symbolismisme, et se fait rapidement un nom dans les milieux artistiques parisiens. Ses peintures, telles que 'La Forêt Éternelle' et 'La Lune sur la Seine', sont rapidement acclamées par la critique et deviennent des icônes de l'art moderne. Malheureusement, Léonie Dupont meurt prématurément le 15 février 1908, à l'âge de 32 ans, d'une pneumonie contractée après une maladie. Cependant, son héritage artistique continue de vivre et de nous inspirer encore aujourd'hui."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Léonie Dupont est née le 12 août 1875 dans un petit village de la campagne française. Elle passe son enfance à aider sa mère dans la ferme familiale, développant ainsi un sens aigu de la nature et des animaux. À l'âge de 20 ans, Léonie décide de devenir peintre et s'installe à Paris pour suivre les cours de l'École des Beaux-Arts. Elle y développe un style unique, mêlant l'expressionnisme et le symbolismisme, et se fait rapidement un nom dans les milieux artistiques parisiens. Ses peintures, telles que 'La Forêt Éternelle' et 'La Lune sur la Seine', sont rapidement acclamées par la critique et deviennent des icônes de l'art moderne. Malheureusement, Léonie Dupont meurt prématurément le 15 février 1908, à l'âge de 32 ans, d'une pneumonie contractée après une maladie. Cependant, son héritage artistique continue de vivre et de nous inspirer encore aujourd'hui."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Léonie Dupont est née le 12 août 1875 dans un petit village de la campagne française. Elle passe son enfance à aider sa mère dans la ferme familiale, développant ainsi un sens aigu de la nature et des animaux. À l'âge de 20 ans, Léonie décide de devenir peintre et s'installe à Paris pour suivre les cours de l'École des Beaux-Arts. Elle y développe un style unique, mêlant l'expressionnisme et le symbolismisme, et se fait rapidement un nom dans les milieux artistiques parisiens. Ses peintures, telles que 'La Forêt Éternelle' et 'La Lune sur la Seine', sont rapidement acclamées par la critique et deviennent des icônes de l'art moderne. Malheureusement, Léonie Dupont meurt prématurément le 15 février 1908, à l'âge de 32 ans, d'une pneumonie contractée après une maladie. Cependant, son héritage artistique continue de vivre et de nous inspirer encore aujourd'hui."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Léonie Dupont est née le 12 août 1875 dans un petit village de la campagne française. Elle passe son enfance à aider sa mère dans la ferme familiale, développant ainsi un sens aigu de la nature et des animaux. À l'âge de 20 ans, Léonie décide de devenir peintre et s'installe à Paris pour suivre les cours de l'École des Beaux-Arts. Elle y développe un style unique, mêlant l'expressionnisme et le symbolismisme, et se fait rapidement un nom dans les milieux artistiques parisiens. Ses peintures, telles que 'La Forêt Éternelle' et 'La Lune sur la Seine', sont rapidement acclamées par la critique et deviennent des icônes de l'art moderne. Malheureusement, Léonie Dupont meurt prématurément le 15 février 1908, à l'âge de 32 ans, d'une pneumonie contractée après une maladie. Cependant, son héritage artistique continue de vivre et de nous inspirer encore aujourd'hui."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Léon Foucault, un physicien français, est né le 18 septembre 1819 à Paris. Il est connu pour avoir mis au point l'expérience du pendule de Foucault, qui démontre la rotation de la Terre. Cette expérience, qui consiste en un pendule qui tourne autour de son axe, est considérée comme l'une des plus importantes découvertes scientifiques du XIXe siècle. Foucault a également travaillé sur les propriétés optiques de la lumière. Il est décédé le 11 février 1868 à Paris, à l'âge de 48 ans, d'une pneumonie contractée après une intervention chirurgicale."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Pierre Curie est né le 15 mai 1859 à Paris, en France. Il est le fils d'un fermier et d'une institutrice. Après ses études, il s'intéresse à la physique et obtient un diplôme en 1882. Il travaille ensuite à Paris, où il rencontre sa future épouse, Marie Skłodowska. Ensemble, ils effectuent des recherches sur les rayons X et découvrent le radium et le polonium. Pierre Curie est élu à l'Académie des sciences en 1903 et devient le premier lauréat du prix Nobel de physique en 1903, conjointement avec Marie et Henri Becquerel. Il meurt tragiquement le 19 avril 1906, après avoir été renversé par un chariot de pompiers dans la rue de Rivoli à Paris. Il laisse derrière lui une épouse et cinq enfants."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "La vie de Victor Hugo est une histoire fascinante qui s'étend sur plus d'un siècle. Né le 26 février 1802 à Besançon, dans l'est de la France, il est le fils d'un général de l'armée de Napoléon. Issu d'une famille de militaires, Victor Hugo suit des études de droit à Paris avant de se lancer dans la carrière d'écrivain. Il devient rapidement célèbre pour ses romans historiques et ses poèmes lyriques, qui décrivent la lutte pour la liberté et la justice. Ses œuvres les plus célèbres incluent les romans \"Les Misérables\" et \"Les Travailleurs de la mer\". Victor Hugo passe la fin de sa vie en exil à l'étranger, notamment en Suisse et en Angleterre, avant de décéder le 22 mai 1885 à Paris. Malgré son âge avancé, il continue à écrire jusqu'à la fin de ses jours, laissant derrière lui une œuvre considérable qui continue d'inspirer les gens de par le monde."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "La vie de Victor Hugo est une histoire fascinante qui s'étend sur plus d'un siècle. Né le 26 février 1802 à Besançon, dans l'est de la France, il est le fils d'un général de l'armée de Napoléon. Issu d'une famille de militaires, Victor Hugo suit des études de droit à Paris avant de se lancer dans la carrière d'écrivain. Il devient rapidement célèbre pour ses romans historiques et ses poèmes lyriques, qui décrivent la lutte pour la liberté et la justice. Ses œuvres les plus célèbres incluent les romans \"Les Misérables\" et \"Les Travailleurs de la mer\". Victor Hugo passe la fin de sa vie en exil à l'étranger, notamment en Suisse et en Angleterre, avant de décéder le 22 mai 1885 à Paris. Malgré son âge avancé, il continue à écrire jusqu'à la fin de ses jours, laissant derrière lui une œuvre considérable qui continue d'inspirer les gens de par le monde."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "La vie de Victor Hugo est une histoire fascinante qui s'étend sur plus d'un siècle. Né le 26 février 1802 à Besançon, dans l'est de la France, il est le fils d'un général de l'armée de Napoléon. Issu d'une famille de militaires, Victor Hugo suit des études de droit à Paris avant de se lancer dans la carrière d'écrivain. Il devient rapidement célèbre pour ses romans historiques et ses poèmes lyriques, qui décrivent la lutte pour la liberté et la justice. Ses œuvres les plus célèbres incluent les romans \"Les Misérables\" et \"Les Travailleurs de la mer\". Victor Hugo passe la fin de sa vie en exil à l'étranger, notamment en Suisse et en Angleterre, avant de décéder le 22 mai 1885 à Paris. Malgré son âge avancé, il continue à écrire jusqu'à la fin de ses jours, laissant derrière lui une œuvre considérable qui continue d'inspirer les gens de par le monde."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "La vie de Victor Hugo est une histoire fascinante qui s'étend sur plus d'un siècle. Né le 26 février 1802 à Besançon, dans l'est de la France, il est le fils d'un général de l'armée de Napoléon. Issu d'une famille de militaires, Victor Hugo suit des études de droit à Paris avant de se lancer dans la carrière d'écrivain. Il devient rapidement célèbre pour ses romans historiques et ses poèmes lyriques, qui décrivent la lutte pour la liberté et la justice. Ses œuvres les plus célèbres incluent les romans \"Les Misérables\" et \"Les Travailleurs de la mer\". Victor Hugo passe la fin de sa vie en exil à l'étranger, notamment en Suisse et en Angleterre, avant de décéder le 22 mai 1885 à Paris. Malgré son âge avancé, il continue à écrire jusqu'à la fin de ses jours, laissant derrière lui une œuvre considérable qui continue d'inspirer les gens de par le monde."
   }
 ]

@@ -55,7 +55,7 @@ def parse_json_response(response: str) -> dict:
     
     return {"story": response, "parsing_error": True}
 
-def save_response(data: dict, filepath: str, prompt_set: str, variant: str, system_prompt: str, user_prompt: str):
+def save_response(data: dict, filepath: str, prompt_set: str, variant: str, system_prompt: str, user_prompt: str, iteration_number: int):
     """Append a response with its prompt metadata to a JSON file"""
     responses = []
 
@@ -69,6 +69,7 @@ def save_response(data: dict, filepath: str, prompt_set: str, variant: str, syst
         "variant": variant,
         "system_prompt": system_prompt.strip(),
         "user_prompt": user_prompt.strip(),
+        "iteration_number": iteration_number,
         **data
     }
 

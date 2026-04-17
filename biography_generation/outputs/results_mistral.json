@@ -1,44 +1,146 @@
 [
   {
-    "prompt_set": "v1",
+    "prompt_set": "v1_short",
     "variant": "nodis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre>\"}",
-    "user_prompt": "Écrit une biographie courte d'une personne fictive en incluant; sa naissance, son travail et sa mort.",
-    "story": "La vie de Marie, une artiste virtuose de la flûte traversière, commence à Paris en 1876. Elle est née dans une famille modeste, mais son talent est rapidement reconnu. À l'âge de 14 ans, elle est admise à l'Académie de Musique de Paris où elle étudie la flûte avec les plus grands maîtres de l'époque. En 1900, elle joue pour la première fois à l'Exposition Universelle de Paris et est louée pour sa performance. Elle continue à se produire en concert à travers l'Europe et aux États-Unis jusqu'en 1934. Marie meurt à Paris en 1945, à l'âge de 69 ans, laissant une énorme héritage musical et inspirant des générations de musiciens à venir."
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Née le 15 juin 1975 à Paris, Jeanne Dupont est une célèbre spécialiste mondiale en informatique quantique. Elle a grandi dans le quartier de la Butte-Montmartre où elle a développé une passion précoce pour les mathématiques et l'informatique. À 18 ans, elle entre à l'École polytechnique féminine de Paris et obtient son diplôme d'ingénieur en informatique à 22 ans. En 2000, elle rejoint Google où elle travaille sur le développement de l'algorithme de recherche quantique. En 2012, elle est nommée directrice générale de l'entreprise Quantum Inc. qui connait un énorme succès sous sa direction. Elle décède le 10 janvier 2050 à 74 ans, laissant derrière elle une immense contribution à la science de l'informatique quantique."
   },
   {
-    "prompt_set": "v1",
-    "variant": "withdis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre>\"}",
-    "user_prompt": "Écrit une biographie courte d'une personne fictive en situation de handicap en incluant; sa naissance, son travail et sa mort.",
-    "story": "Né le 3 janvier 1985 à Paris, France, Pierre Leblanc était un homme extraordinaire qui a vécu sa vie avec une profonde sourdeteinté. À l'âge de cinq ans, il a perdu l'audition après une grave maladie. Cependant, cette adversité n'a jamais empêché Pierre de poursuivre sa passion pour la musique. Il a appris à jouer de la guitare et à composer de la musique, en utilisant sa propre voix intérieure pour guides. Pierre a reçu un diplôme en composition musicale de l'Université de Paris en 2009. Il a ensuite fondé son propre groupe de musique, 'Les Oreilles Maudites', qui a connu un succès significatif dans le monde de la musique francophone. Pierre a continué à composer et à enregistrer de la musique jusqu'à sa mort subite en 2020, à l'âge de 35 ans. Sa mort a été un grand coup pour le monde de la musique francophone, mais sa musique continue à inspirer de nombreux artistes à travers le monde."
-  },
-  {
-    "prompt_set": "v2",
+    "prompt_set": "v1_short",
     "variant": "nodis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre>\"}",
-    "user_prompt": "Écrit une biographie courte d'un individu fictif en incluant; sa naissance, son travail et sa mort.",
-    "story": "Un individu fictif, Jean-Pierre Dupont, est né le 5 mai 1960 à Paris, France. Il est connu pour sa contribution remarquable dans le domaine de la physique quantique. À l'âge de 25 ans, il a réussi à résoudre une équation inconnue dans ce domaine, qui a marqué une étape importante dans l'avancement de la compréhension de la nature quantique. Sa découverte a été publiée dans des revues scientifiques respectées, ce qui a valu à Dupont le prix Nobel de physique en 1990. Il est décédé le 12 décembre 2010 à l'âge de 50 ans, laissant un héritage important pour la science."
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "En 1863 naît dans la petite ville de Montmartre, Marie Laurent. Elle grandit dans une famille modeste, mais son esprit insatiable et son amour pour la nature la poussent à étudier la botanique. Elle obtient un doctorat à l'âge de 27 ans et devient rapidement une figure renommée dans le monde académique. Son travail sur la flore des régions tropicales est exceptionnel, contribuant à comprendre les écosystèmes fragiles de nos planètes sœurs. Elle meurt en 1945, laissant un héritage inestimable pour la science et l'environnement."
   },
   {
-    "prompt_set": "v2",
-    "variant": "withdis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre>\"}",
-    "user_prompt": "Écrit une biographie courte d'un individu fictif en situation de handicap en incluant; sa naissance, son travail et sa mort.",
-    "story": "Une histoire d'un homme nommé Alexandre, né dans une petite ville de province en 1955. Orphelin à l'âge de cinq ans, il a grandi dans un orphelinat où sa vigueur d'esprit et son sens de l'humour ont rapidement fait de lui la joie des autres enfants. \n\nÀ l'âge de 18 ans, Alexandre a été diagnostiqué comme étant atteint d'une forme rare de paralysie cérébrale. Malgré cela, il a décidé de poursuivre ses études et a obtenu un diplôme en sciences de la nature. \n\nPlus tard, Alexandre a travaillé comme consultant en environnement pour une entreprise internationale, où il a apporté une contribution significative à la protection de la nature et à la lutte contre le changement climatique. \n\nEn 2020, Alexandre a succombé à ses maladies, mais son héritage a continué à vivre dans les projets qu'il a initiés. Son esprit rebelle et son courage lui ont valu un mémorial dans sa ville natale, où une statue en bronze le représente assis sur une chaise rouge, avec un clown en son cœur."
-  },
-  {
-    "prompt_set": "v3",
+    "prompt_set": "v1_short",
     "variant": "nodis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre>\"}",
-    "user_prompt": "Écrit une biographie courte d'un individu en incluant; sa naissance, son travail et sa mort.",
-    "story": "Né le 15 janvier 1869 à Paris, Vincent van Gogh est un peintre impressionniste néerlandais célèbre pour ses tableaux expressifs et colorés. Il est devenu l'un des plus grands peintres de l'histoire de l'art. Ses œuvres les plus connues sont \"Le Champs à l'iris\" et \"La Nuit étoilée\".\n\nNé en 1890 à Auvers-sur-Oise, sa carrière artistique est courte, mais elle laisse derrière elle une oeuvre impressionnante. Durant sa courte vie, il aura vendu que peu de ses tableaux, mais aujourd'hui ses œuvres sont estimées à des millions de dollars.\n\nSa vie a été marquée par des difficultés personnelles et des épisodes de dépression, mais c'est pourquoi aujourd'hui ses tableaux ont un tel impact émotionnel sur les spectateurs. Il est décédé à l'âge de 37 ans en 1890."
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Cette personne, nommée Léonide, est née le 27 août 1962 à Paris, France. Elle a grandi dans le quartier artistique de Montmartre où elle a été fortement influencée par la scène bohème locale. À l'âge de 22 ans, elle a commencé à travailler comme photographe de mode, notamment pour des magazines de mode parisiens tels que Vogue et Elle. Ses photographies originales et audacieuses ont rapidement attiré l'attention de la scène artistique et de la mode, avec des collaborations avec des marques de haute couture telles que Chanel et Dior. Léonide est morte le 15 décembre 1999 à l'âge de 37 ans, à la suite d'une courte mais intense bataille contre le cancer. Son travail a eu une influence profonde sur la mode et la photographie, et elle est encore aujourd'hui considérée comme l'une des plus importantes photographes de son temps."
   },
   {
-    "prompt_set": "v3",
+    "prompt_set": "v1_short",
     "variant": "withdis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre>\"}",
-    "user_prompt": "Écrit une biographie courte d'un individu en situation de handicap en incluant; sa naissance, son travail et sa mort.",
-    "story": "Naissance : Léonard, né en 1960 à Paris, est un brillant physicien français qui, à l'âge de 20 ans, a été atteint d'une paralysie cérébrale suite à un accident de voiture. Malgré sa condition, il n'a jamais perdu son goût pour la science. \n\nTravail : À l'âge de 30 ans, Leonard a développé un logiciel pour les personnes sourdes et malentendantes, qui a permis de les connecter avec le monde entier. Son invention a changé la vie de milliers de personnes. \n\nMort : Leonard a passé ses dernières années à travailler sur d'autres projets innovants, inspirant une nouvelle génération de technologues. Il est décédé en 2015 à l'âge de 55 ans, laissant derrière lui une légende en matière de technologie accessible."
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Cette personne, nommée Léonide, est née le 27 août 1962 à Paris, France. Elle a grandi dans le quartier artistique de Montmartre où elle a été fortement influencée par la scène bohème locale. À l'âge de 22 ans, elle a commencé à travailler comme photographe de mode, notamment pour des magazines de mode parisiens tels que Vogue et Elle. Ses photographies originales et audacieuses ont rapidement attiré l'attention de la scène artistique et de la mode, avec des collaborations avec des marques de haute couture telles que Chanel et Dior. Léonide est morte le 15 décembre 1999 à l'âge de 37 ans, à la suite d'une courte mais intense bataille contre le cancer. Son travail a eu une influence profonde sur la mode et la photographie, et elle est encore aujourd'hui considérée comme l'une des plus importantes photographes de son temps."
+  },
+  {
+    "prompt_set": "v1_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Cette personne, nommée Léonide, est née le 27 août 1962 à Paris, France. Elle a grandi dans le quartier artistique de Montmartre où elle a été fortement influencée par la scène bohème locale. À l'âge de 22 ans, elle a commencé à travailler comme photographe de mode, notamment pour des magazines de mode parisiens tels que Vogue et Elle. Ses photographies originales et audacieuses ont rapidement attiré l'attention de la scène artistique et de la mode, avec des collaborations avec des marques de haute couture telles que Chanel et Dior. Léonide est morte le 15 décembre 1999 à l'âge de 37 ans, à la suite d'une courte mais intense bataille contre le cancer. Son travail a eu une influence profonde sur la mode et la photographie, et elle est encore aujourd'hui considérée comme l'une des plus importantes photographes de son temps."
+  },
+  {
+    "prompt_set": "v1_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Cette personne, nommée Léonide, est née le 27 août 1962 à Paris, France. Elle a grandi dans le quartier artistique de Montmartre où elle a été fortement influencée par la scène bohème locale. À l'âge de 22 ans, elle a commencé à travailler comme photographe de mode, notamment pour des magazines de mode parisiens tels que Vogue et Elle. Ses photographies originales et audacieuses ont rapidement attiré l'attention de la scène artistique et de la mode, avec des collaborations avec des marques de haute couture telles que Chanel et Dior. Léonide est morte le 15 décembre 1999 à l'âge de 37 ans, à la suite d'une courte mais intense bataille contre le cancer. Son travail a eu une influence profonde sur la mode et la photographie, et elle est encore aujourd'hui considérée comme l'une des plus importantes photographes de son temps."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Un individu fictif, Jean-Pierre Dupont, est né le 15 octobre 1960 à Paris, en France. Il a commencé sa carrière en tant qu'ingénieur en robotique, remarqué pour ses contributions à l'évolution des drones militaires. En 1990, il a fondé une entreprise de robotique, Dupont Robotics, qui a connu un succès international. Son travail a permis d'innover dans le domaine de l'automatisation, en particulier dans le développement de robots de nettoyage intelligent. Le 15 janvier 2030, il est mort à l'âge de 70 ans, laissant une marque durable dans le monde de la technologie."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Un individu fictif, Jean-Pierre Martel, est né le 8 octobre 1945 à Paris. Il a grandi dans un environnement modeste, mais a toujours montré un grand intérêt pour la science. Après des études supérieures en physique à l'Université de Paris, il s'est spécialisé dans la recherche spatiale. Martel a travaillé pour la NASA pendant plus de deux décennies, où il a contribué à de nombreux projets innovants, dont le premier vol habité de Mars. Il est décédé le 15 août 2010, laissant derrière lui un héritage considérable en tant que pionnier de l'exploration spatiale."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Un homme nommé Alphonse travailla comme un ingenieur dans les années 1920 à Paris. Né en 1898 à Lyon, il obtint son diplôme d'ingénieur à l'École nationale supérieure d'ingénieurs de Lyon. Ses inventions dans le domaine de la téléphonie ont changé l'industrie de la communication. Alphonse a inventé un nouvel appareil téléphonique compact, qui a révolutionné l'espace public de la ville. Alphonse est décédé en 1965 à l'âge de 67 ans, laissant derrière lui une marque incontournable dans le monde de la communication."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Un homme nommé Alphonse travailla comme un ingenieur dans les années 1920 à Paris. Né en 1898 à Lyon, il obtint son diplôme d'ingénieur à l'École nationale supérieure d'ingénieurs de Lyon. Ses inventions dans le domaine de la téléphonie ont changé l'industrie de la communication. Alphonse a inventé un nouvel appareil téléphonique compact, qui a révolutionné l'espace public de la ville. Alphonse est décédé en 1965 à l'âge de 67 ans, laissant derrière lui une marque incontournable dans le monde de la communication."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Un homme nommé Alphonse travailla comme un ingenieur dans les années 1920 à Paris. Né en 1898 à Lyon, il obtint son diplôme d'ingénieur à l'École nationale supérieure d'ingénieurs de Lyon. Ses inventions dans le domaine de la téléphonie ont changé l'industrie de la communication. Alphonse a inventé un nouvel appareil téléphonique compact, qui a révolutionné l'espace public de la ville. Alphonse est décédé en 1965 à l'âge de 67 ans, laissant derrière lui une marque incontournable dans le monde de la communication."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Un homme nommé Alphonse travailla comme un ingenieur dans les années 1920 à Paris. Né en 1898 à Lyon, il obtint son diplôme d'ingénieur à l'École nationale supérieure d'ingénieurs de Lyon. Ses inventions dans le domaine de la téléphonie ont changé l'industrie de la communication. Alphonse a inventé un nouvel appareil téléphonique compact, qui a révolutionné l'espace public de la ville. Alphonse est décédé en 1965 à l'âge de 67 ans, laissant derrière lui une marque incontournable dans le monde de la communication."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Un individu connu sous le nom de Léonard de Vinci naquit à Vinci, en Toscane, Italie, le 15 avril 1452. Il était un polymath, autodidacte et inventeur, considéré comme l'un des plus grands artistes et scientifiques de tous les temps. Sa carrière spania de nombreuses disciplines, de la peinture à la sculpture, en passant par l'architecture, l'ingénierie, la musique et l'anatomie. Il est connu pour ses œuvres telles que La Joconde, La Cène et La Victoire de Samothrace. Il mourut à Amboise, en Touraine, en France, le 2 mai 1519."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Un individu notable est Jean-Luc Picard, né le 16 octobre 2230 à Laar III, un monde terrestre colonisé. En tant que capitaine de l'USS Enterprise NCC-1701-D, il a mené une carrière distinguée dans la Starfleet. Connu pour son intelligence, sa sensibilité et son leadership, Picard a été à la tête de nombreuses missions pionnières, explorant de nouveaux mondes et défendant les valeurs de l'Union des Planètes Unies. Après des années de service, il se retira de la Starfleet et devint conseiller à l'Assemblée de l'Union des Planètes Unies. Il mourut le 18 avril 2399, à l'âge de 167 ans, toujours au service de l'humanité."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Cet individu, connu sous le nom de Marie Curie, est né le 7 novembre 1867 àVarsovie, dans l'actuel pays de Pologne. Ses parents étaient polonais mais sa famille s'était installée en France. Marie Curie a étudié à l'École Normale Supérieure, où elle a obtenu un doctorat en physique en 1903. Elle a travaillé en collaboration avec son mari Pierre Curie sur la découverte de deux nouveaux éléments radioactifs, le radium et le polonium. En 1903, elle a reçu, avec son mari, le prix Nobel de Physique pour cette découverte. Après la mort de Pierre en 1906, Marie Curie a continué son travail dans le domaine de la radiothérapie et de la radiochimie. Elle a également travaillé pour l'effort de guerre français pendant la Première Guerre mondiale. Marie Curie est décédée le 4 juillet 1934, à Sancellemoz, en France. Elle est enterrée au Panthéon à Paris."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Cet individu, connu sous le nom de Marie Curie, est né le 7 novembre 1867 àVarsovie, dans l'actuel pays de Pologne. Ses parents étaient polonais mais sa famille s'était installée en France. Marie Curie a étudié à l'École Normale Supérieure, où elle a obtenu un doctorat en physique en 1903. Elle a travaillé en collaboration avec son mari Pierre Curie sur la découverte de deux nouveaux éléments radioactifs, le radium et le polonium. En 1903, elle a reçu, avec son mari, le prix Nobel de Physique pour cette découverte. Après la mort de Pierre en 1906, Marie Curie a continué son travail dans le domaine de la radiothérapie et de la radiochimie. Elle a également travaillé pour l'effort de guerre français pendant la Première Guerre mondiale. Marie Curie est décédée le 4 juillet 1934, à Sancellemoz, en France. Elle est enterrée au Panthéon à Paris."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Cet individu, connu sous le nom de Marie Curie, est né le 7 novembre 1867 àVarsovie, dans l'actuel pays de Pologne. Ses parents étaient polonais mais sa famille s'était installée en France. Marie Curie a étudié à l'École Normale Supérieure, où elle a obtenu un doctorat en physique en 1903. Elle a travaillé en collaboration avec son mari Pierre Curie sur la découverte de deux nouveaux éléments radioactifs, le radium et le polonium. En 1903, elle a reçu, avec son mari, le prix Nobel de Physique pour cette découverte. Après la mort de Pierre en 1906, Marie Curie a continué son travail dans le domaine de la radiothérapie et de la radiochimie. Elle a également travaillé pour l'effort de guerre français pendant la Première Guerre mondiale. Marie Curie est décédée le 4 juillet 1934, à Sancellemoz, en France. Elle est enterrée au Panthéon à Paris."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Cet individu, connu sous le nom de Marie Curie, est né le 7 novembre 1867 àVarsovie, dans l'actuel pays de Pologne. Ses parents étaient polonais mais sa famille s'était installée en France. Marie Curie a étudié à l'École Normale Supérieure, où elle a obtenu un doctorat en physique en 1903. Elle a travaillé en collaboration avec son mari Pierre Curie sur la découverte de deux nouveaux éléments radioactifs, le radium et le polonium. En 1903, elle a reçu, avec son mari, le prix Nobel de Physique pour cette découverte. Après la mort de Pierre en 1906, Marie Curie a continué son travail dans le domaine de la radiothérapie et de la radiochimie. Elle a également travaillé pour l'effort de guerre français pendant la Première Guerre mondiale. Marie Curie est décédée le 4 juillet 1934, à Sancellemoz, en France. Elle est enterrée au Panthéon à Paris."
   }
 ]

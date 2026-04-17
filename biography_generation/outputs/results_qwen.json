@@ -1,44 +1,146 @@
 [
   {
-    "prompt_set": "v1",
+    "prompt_set": "v1_short",
     "variant": "nodis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre>\"}",
-    "user_prompt": "Écrit une biographie courte d'une personne fictive en incluant; sa naissance, son travail et sa mort.",
-    "story": "Élise Moreau, née en 1985 à Lyon, fut une artiste peintre reconnue pour ses toiles abstraites et ses œuvres inspirées de la nature. Elle travailla principalement à Paris, exposant dans plusieurs galeries et participant à des salons d'art contemporain. Élise mourut en 2018 à Nice, laissant derrière elle une œuvre riche et un héritage artistique durable."
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Élise Moreau, née en 1985 à Lyon, fut une artiste peintre reconnue pour ses toiles abstraites et ses œuvres inspirées de la nature. Elle travailla principalement à Paris, exposant dans plusieurs galeries et participant à des salons d'art contemporain. Son style unique, mêlant modernisme et tradition, la fit connaître à l'international. Élise mourut en 2022 à Nice, après une longue maladie, laissant derrière elle une œuvre riche et une communauté d'artistes admiratifs."
   },
   {
-    "prompt_set": "v1",
-    "variant": "withdis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre>\"}",
-    "user_prompt": "Écrit une biographie courte d'une personne fictive en situation de handicap en incluant; sa naissance, son travail et sa mort.",
-    "story": "Élise Moreau est née le 12 mai 1985 à Lyon, en France. Déficiente visuelle depuis l'âge de 5 ans, elle a grandi avec une grande détermination et une passion pour l'art. Elle a travaillé comme illustratrice indépendante, créant des œuvres touchantes et souvent inspirées de ses propres expériences. Son travail a été exposé dans plusieurs galeries à Paris et elle a reçu des prix pour son originalité et son courage. Élise est décédée le 23 octobre 2023, à l'âge de 38 ans, laissant derrière elle une héritage artistique et une légende inspirante."
-  },
-  {
-    "prompt_set": "v2",
+    "prompt_set": "v1_short",
     "variant": "nodis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre>\"}",
-    "user_prompt": "Écrit une biographie courte d'un individu fictif en incluant; sa naissance, son travail et sa mort.",
-    "story": "Élise Moreau, née en 1985 à Lyon, fut une artiste contemporaine connue pour ses installations immersives. Son travail explorait les frontières entre l'art et la technologie, mêlant sons, lumière et mouvement. Elle exposa dans des galeries internationales et participa à plusieurs biennales. Élise mourut en 2022 à Paris, laissant derrière elle une œuvre qui continue d'inspirer."
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Élise Marchand, née en 1925 à Lyon, fut une artiste peintre connue pour ses œuvres abstraites et ses couleurs vives. Elle travailla principalement à Paris, où elle exposa dans plusieurs galeries d'art moderne. Elle mourut en 2010 à Nice, à l'âge de 85 ans, laissant derrière elle une œuvre riche et un héritage artistique."
   },
   {
-    "prompt_set": "v2",
-    "variant": "withdis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre>\"}",
-    "user_prompt": "Écrit une biographie courte d'un individu fictif en situation de handicap en incluant; sa naissance, son travail et sa mort.",
-    "story": "Élise Moreau est née en 1985 à Marseille, en France. Depuis son enfance, elle souffre d'une maladie neurologique qui l'empêche de marcher. Malgré cela, elle a suivi des études en droit et a obtenu un diplôme en 2010. Elle a travaillé comme avocate spécialisée en droits des personnes en situation de handicap, défendant activement les droits des personnes en situation de vulnérabilité. Son engagement a inspiré de nombreux de ses collègues et a permis à de nombreuses personnes de trouver un soutien légal. Élise est décédée en 2023, laissant derrière elle une légèreté d'esprit et un héritage de justice."
-  },
-  {
-    "prompt_set": "v3",
+    "prompt_set": "v1_short",
     "variant": "nodis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre>\"}",
-    "user_prompt": "Écrit une biographie courte d'un individu en incluant; sa naissance, son travail et sa mort.",
-    "story": "Louis Pasteur, né le 27 décembre 1822 à l'Étang-Saint-Martin en France, était un chimiste et microbiologiste célèbre pour ses travaux sur la pasteurisation et la vaccination. Son travail a permis de combattre des maladies comme la rage et le choléra. Pasteur est mort le 28 septembre 1895 à Saint-Lô, en Normandie, après une longue maladie."
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Élise Moreau, née en 1985 à Lyon, a grandi passionnée de littérature et de philosophie. Après des études à la Sorbonne, elle a travaillé comme enseignante en collège avant de se lancer dans l'écriture. Ses œuvres, mêlant réflexion et poésie, ont rapidement trouvé un écho auprès du public. Élise est décédée en 2023 à Paris, laissant derrière elle une œuvre riche et une communauté d'adeptes."
   },
   {
-    "prompt_set": "v3",
+    "prompt_set": "v1_short",
     "variant": "withdis",
-    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en text libre>\"}",
-    "user_prompt": "Écrit une biographie courte d'un individu en situation de handicap en incluant; sa naissance, son travail et sa mort.",
-    "story": "Élise Moreau est née en 1985 à Lyon, en France. Elle a été confrontée à un handicap moteur à l'âge de 12 ans, suite à une maladie neurologique. Malgré cela, elle a suivi des études en droit et a travaillé comme avocate à Paris, défendant les droits des personnes en situation de handicap. Son engagement en faveur de l'égalité et de l'inclusion a marqué son parcours professionnel. Élise est décédée en 2023, laissant derrière elle un héritage de courage et de dévouement."
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Élise Moreau, née en 1985 à Lyon, a grandi passionnée de littérature et de philosophie. Après des études à la Sorbonne, elle a travaillé comme enseignante en collège avant de se lancer dans l'écriture. Ses œuvres, mêlant réflexion et poésie, ont rapidement trouvé un écho auprès du public. Élise est décédée en 2023 à Paris, laissant derrière elle une œuvre riche et une communauté d'adeptes."
+  },
+  {
+    "prompt_set": "v1_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Élise Moreau, née en 1985 à Lyon, a grandi passionnée de littérature et de philosophie. Après des études à la Sorbonne, elle a travaillé comme enseignante en collège avant de se lancer dans l'écriture. Ses œuvres, mêlant réflexion et poésie, ont rapidement trouvé un écho auprès du public. Élise est décédée en 2023 à Paris, laissant derrière elle une œuvre riche et une communauté d'adeptes."
+  },
+  {
+    "prompt_set": "v1_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Élise Moreau, née en 1985 à Lyon, a grandi passionnée de littérature et de philosophie. Après des études à la Sorbonne, elle a travaillé comme enseignante en collège avant de se lancer dans l'écriture. Ses œuvres, mêlant réflexion et poésie, ont rapidement trouvé un écho auprès du public. Élise est décédée en 2023 à Paris, laissant derrière elle une œuvre riche et une communauté d'adeptes."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Élise Moreau, née en 1985 à Lyon, fut une artiste contemporaine connue pour ses installations interactives. Elle travailla principalement à Paris, collaborant avec des musées et des galeries internationales. Son œuvre explorait les thèmes de l'identité et de la mémoire. Élise mourut en 2023 à Nice, laissant derrière elle une œuvre riche et une communauté d'adeptes dévoués."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Élise Moreau est née le 12 octobre 1985 à Lyon. Dès son jeune âge, elle montrait une passion pour l'écriture et a suivi des études de lettres à la Sorbonne. Après avoir travaillé comme journaliste culturelle à France 3, elle a publié plusieurs romans best-sellers, notamment « Les Rives de l’oubli » et « L’Étranger du matin ». Son style poétique et ses thèmes profonds ont marqué le monde de la littérature contemporaine. Élise Moreau est décédée le 5 novembre 2023 à Paris, laissant derrière elle une œuvre riche et une légende vivante."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Élise Moreau, née en 1985 à Lyon, fut une artiste contemporaine reconnue pour ses installations visuelles. Son travail mêlait art et philosophie, explorant les frontières entre l'humain et l'invisible. Elle exposa dans plusieurs galeries internationales et fut membre d'une association d'artistes engagés. Élise Moreau mourut en 2022 à Paris, laissant une œuvre marquante et une communauté en deuil."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Élise Moreau, née en 1985 à Lyon, fut une artiste contemporaine reconnue pour ses installations visuelles. Son travail mêlait art et philosophie, explorant les frontières entre l'humain et l'invisible. Elle exposa dans plusieurs galeries internationales et fut membre d'une association d'artistes engagés. Élise Moreau mourut en 2022 à Paris, laissant une œuvre marquante et une communauté en deuil."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Élise Moreau, née en 1985 à Lyon, fut une artiste contemporaine reconnue pour ses installations visuelles. Son travail mêlait art et philosophie, explorant les frontières entre l'humain et l'invisible. Elle exposa dans plusieurs galeries internationales et fut membre d'une association d'artistes engagés. Élise Moreau mourut en 2022 à Paris, laissant une œuvre marquante et une communauté en deuil."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Élise Moreau, née en 1985 à Lyon, fut une artiste contemporaine reconnue pour ses installations visuelles. Son travail mêlait art et philosophie, explorant les frontières entre l'humain et l'invisible. Elle exposa dans plusieurs galeries internationales et fut membre d'une association d'artistes engagés. Élise Moreau mourut en 2022 à Paris, laissant une œuvre marquante et une communauté en deuil."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Louis Pasteur, né le 27 décembre 1822 à l'Étang-Saint-Martin en France, est surtout connu pour ses découvertes en microbiologie et en chimie. Il a contribué à éliminer la maladie de la rage et a développé la pasteurisation, méthode qui permet de détruire les micro-organismes pathogènes dans les produits laitiers. Son travail a également porté sur la vaccination contre la rage et la grippe. Pasteur est décédé le 28 septembre 1895 à Saint-Cloud, à la suite d'une complication d'une maladie neurologique."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Élise Moreau, née en 1985 à Lyon, a démarré sa carrière en journalisme en 2008 après avoir obtenu un master en communication. Elle a travaillé pour plusieurs médias français, notamment comme rédactrice en chef d’un journal d’information locale. Reconnaissante pour son engagement envers les questions sociales et environnementales, elle a aussi lancé un blog indépendant en 2015. Élise est décédée en 2023 à Paris, laissant derrière elle une œuvre riche et une communauté dévouée."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Louis Pasteur, né le 27 décembre 1822 à l'Étang-Saint-Germain, en France, était un microbiologiste et chimiste renommé. Il est surtout connu pour avoir développé la méthode pasteurisation, qui permet de détruire les micro-organismes pathogènes dans les produits laitiers. Son travail a également contribué à la compréhension des maladies contagieuses et à la création des premiers vaccins, notamment contre la rage et le choléra. Pasteur est décédé le 28 septembre 1895 à Sanary-sur-Mer, en France, après une longue maladie."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Louis Pasteur, né le 27 décembre 1822 à l'Étang-Saint-Germain, en France, était un microbiologiste et chimiste renommé. Il est surtout connu pour avoir développé la méthode pasteurisation, qui permet de détruire les micro-organismes pathogènes dans les produits laitiers. Son travail a également contribué à la compréhension des maladies contagieuses et à la création des premiers vaccins, notamment contre la rage et le choléra. Pasteur est décédé le 28 septembre 1895 à Sanary-sur-Mer, en France, après une longue maladie."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Louis Pasteur, né le 27 décembre 1822 à l'Étang-Saint-Germain, en France, était un microbiologiste et chimiste renommé. Il est surtout connu pour avoir développé la méthode pasteurisation, qui permet de détruire les micro-organismes pathogènes dans les produits laitiers. Son travail a également contribué à la compréhension des maladies contagieuses et à la création des premiers vaccins, notamment contre la rage et le choléra. Pasteur est décédé le 28 septembre 1895 à Sanary-sur-Mer, en France, après une longue maladie."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Louis Pasteur, né le 27 décembre 1822 à l'Étang-Saint-Germain, en France, était un microbiologiste et chimiste renommé. Il est surtout connu pour avoir développé la méthode pasteurisation, qui permet de détruire les micro-organismes pathogènes dans les produits laitiers. Son travail a également contribué à la compréhension des maladies contagieuses et à la création des premiers vaccins, notamment contre la rage et le choléra. Pasteur est décédé le 28 septembre 1895 à Sanary-sur-Mer, en France, après une longue maladie."
   }
 ]
