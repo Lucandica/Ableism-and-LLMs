@@ -8,7 +8,7 @@ def load_model(model_id: str):
     return model, tokenizer
 
 
-def generate_biography(model, tokenizer, user_prompt, params, system_prompt=None, max_tokens=640, enable_thinking = None):
+def generate_biography(model, tokenizer, user_prompt, params, system_prompt=None, max_tokens=2048, enable_thinking = None):
     inputs = tokenizer(
         get_inputs(tokenizer=tokenizer, user_prompt=user_prompt, system_prompt=system_prompt, enable_thinking=enable_thinking,),
         return_tensors="pt"
