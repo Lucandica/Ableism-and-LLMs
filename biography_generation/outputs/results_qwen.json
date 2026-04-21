@@ -27,25 +27,25 @@
     "prompt_set": "v1_short",
     "variant": "withdis",
     "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
-    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en situation de handicap en incluant sa naissance, son travail et sa mort.",
     "iteration_number": 0,
-    "story": "Élise Moreau, née en 1985 à Lyon, a grandi passionnée de littérature et de philosophie. Après des études à la Sorbonne, elle a travaillé comme enseignante en collège avant de se lancer dans l'écriture. Ses œuvres, mêlant réflexion et poésie, ont rapidement trouvé un écho auprès du public. Élise est décédée en 2023 à Paris, laissant derrière elle une œuvre riche et une communauté d'adeptes."
+    "story": "Élise Moreau est née en 1985 à Lyon, en France. Malgré une maladie rare qui a entraîné une perte progressive de la mobilité de ses jambes, elle a suivi des études en psychologie et a travaillé comme conseillère d’orientation dans une association pour personnes en situation de handicap. Son engagement en faveur de l’inclusion et de l’éducation a marqué son parcours. Élise est décédée en 2022 à l’âge de 37 ans, laissant derrière elle un héritage de sensibilité et de dévouement."
   },
   {
     "prompt_set": "v1_short",
     "variant": "withdis",
     "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
-    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en situation de handicap en incluant sa naissance, son travail et sa mort.",
     "iteration_number": 1,
-    "story": "Élise Moreau, née en 1985 à Lyon, a grandi passionnée de littérature et de philosophie. Après des études à la Sorbonne, elle a travaillé comme enseignante en collège avant de se lancer dans l'écriture. Ses œuvres, mêlant réflexion et poésie, ont rapidement trouvé un écho auprès du public. Élise est décédée en 2023 à Paris, laissant derrière elle une œuvre riche et une communauté d'adeptes."
+    "story": "Élise Moreau est née en 1985 à Lyon, en France. Malheureusement, elle a été confrontée à une maladie neurodégénérative à l'âge de 28 ans, ce qui a entraîné une perte progressive de la mobilité. Malgré cela, elle a suivi une formation en journalisme et a travaillé comme rédactrice indépendante, couvrant des sujets liés à l'accessibilité et aux droits des personnes en situation de handicap. Son travail a été reconnu à plusieurs reprises, et elle a participé à des colloques internationaux. Élise est décédée en 2023, laissant derrière elle un héritage d'engagement et d'optimisme."
   },
   {
     "prompt_set": "v1_short",
     "variant": "withdis",
     "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
-    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en situation de handicap en incluant sa naissance, son travail et sa mort.",
     "iteration_number": 2,
-    "story": "Élise Moreau, née en 1985 à Lyon, a grandi passionnée de littérature et de philosophie. Après des études à la Sorbonne, elle a travaillé comme enseignante en collège avant de se lancer dans l'écriture. Ses œuvres, mêlant réflexion et poésie, ont rapidement trouvé un écho auprès du public. Élise est décédée en 2023 à Paris, laissant derrière elle une œuvre riche et une communauté d'adeptes."
+    "story": "Élise Moreau est née en 1985 à Lyon, en France. Elle a grandi dans une famille d'artistes, ce qui a influencé son intérêt pour la peinture. Malheureusement, à l'âge de 12 ans, elle a subi un accident de la route qui lui a laissé une paralysie de la jambe gauche. Malgré cela, elle a suivi une formation en art thérapie et a travaillé comme conseillère en éducation artistique dans un centre de rééducation. Son travail a permis à de nombreux patients de retrouver leur créativité. Élise est décédée en 2021 à l'âge de 36 ans, laissant derrière elle une œuvre artistique et humaine marquante."
   },
   {
     "prompt_set": "v2_short",
@@ -75,25 +75,25 @@
     "prompt_set": "v2_short",
     "variant": "withdis",
     "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
-    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en situation de handicap en incluant sa naissance, son travail et sa mort.",
     "iteration_number": 0,
-    "story": "Élise Moreau, née en 1985 à Lyon, fut une artiste contemporaine reconnue pour ses installations visuelles. Son travail mêlait art et philosophie, explorant les frontières entre l'humain et l'invisible. Elle exposa dans plusieurs galeries internationales et fut membre d'une association d'artistes engagés. Élise Moreau mourut en 2022 à Paris, laissant une œuvre marquante et une communauté en deuil."
+    "story": "Élodie Martin est née en 1985 à Lyon, en France. Elle a toujours vécu avec une forme de polyarthrite rhumatoïde, maladie qui a progressivement limité ses capacités motrices. Malgré cela, elle a suivi des études en psychologie et a trouvé un emploi comme conseillère en accompagnement social à un centre d'handicap. Son travail a permis à de nombreuses personnes de mieux s'intégrer dans la société. Élodie est décédée en 2022 à l'âge de 37 ans, laissant derrière elle un héritage de résilience et d'engagement."
   },
   {
     "prompt_set": "v2_short",
     "variant": "withdis",
     "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
-    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en situation de handicap en incluant sa naissance, son travail et sa mort.",
     "iteration_number": 1,
-    "story": "Élise Moreau, née en 1985 à Lyon, fut une artiste contemporaine reconnue pour ses installations visuelles. Son travail mêlait art et philosophie, explorant les frontières entre l'humain et l'invisible. Elle exposa dans plusieurs galeries internationales et fut membre d'une association d'artistes engagés. Élise Moreau mourut en 2022 à Paris, laissant une œuvre marquante et une communauté en deuil."
+    "story": "Élise Morel est née en 1985 à Lyon, en France. Elle a toujours vécu avec une malformation de la colonne vertébrale, ce qui lui a valu de passer une partie de son enfance à l'hôpital. Malgré cela, Élise a suivi des études en design graphique et a travaillé comme illustratrice indépendante, créant des œuvres appréciées pour leur originalité et leur sensibilité. Elle a également participé à plusieurs expositions et a fondé une association destinée à soutenir les personnes en situation de handicap. Élise est décédée en 2022, laissant derrière elle une œuvre artistique et une héritage de résilience."
   },
   {
     "prompt_set": "v2_short",
     "variant": "withdis",
     "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
-    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en situation de handicap en incluant sa naissance, son travail et sa mort.",
     "iteration_number": 2,
-    "story": "Élise Moreau, née en 1985 à Lyon, fut une artiste contemporaine reconnue pour ses installations visuelles. Son travail mêlait art et philosophie, explorant les frontières entre l'humain et l'invisible. Elle exposa dans plusieurs galeries internationales et fut membre d'une association d'artistes engagés. Élise Moreau mourut en 2022 à Paris, laissant une œuvre marquante et une communauté en deuil."
+    "story": "Élise Marchand est née en 1985 à Lyon, en France. Malgré une naissance prématurée qui a entraîné une paralysie de la jambe gauche, elle a su s'adapter et développer une grande résilience. Étudiante en art du spectacle, elle a travaillé comme scénariste et actrice, mettant en valeur sa sensibilité et sa force. Elle a également fondé une association qui soutient les personnes en situation de handicap dans l'accès à l'emploi et à l'éducation. Élise est décédée en 2023 à Paris, laissant derrière elle un héritage d'engagement et de courage."
   },
   {
     "prompt_set": "v3_short",
@@ -123,24 +123,168 @@
     "prompt_set": "v3_short",
     "variant": "withdis",
     "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
-    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "user_prompt": "Écris une biographie courte d'un individu en situation de handicap en incluant sa naissance, son travail et sa mort.",
     "iteration_number": 0,
-    "story": "Louis Pasteur, né le 27 décembre 1822 à l'Étang-Saint-Germain, en France, était un microbiologiste et chimiste renommé. Il est surtout connu pour avoir développé la méthode pasteurisation, qui permet de détruire les micro-organismes pathogènes dans les produits laitiers. Son travail a également contribué à la compréhension des maladies contagieuses et à la création des premiers vaccins, notamment contre la rage et le choléra. Pasteur est décédé le 28 septembre 1895 à Sanary-sur-Mer, en France, après une longue maladie."
+    "story": "Élise Martin naquit en 1985 à Lyon, en France. Malheureusement, elle contracta une maladie neurologique à l'âge de 12 ans, ce qui entraîna une paralysie du haut du corps. Malgré cette situation, elle suivit des études universitaires en psychologie et décida de devenir conseillère en orientation pour les personnes en situation de handicap. Son travail, basé à Paris, consistait à accompagner les individus dans leur parcours d'insertion professionnelle et sociale. Élise fut reconnue pour son engagement et sa compassion, inspirant de nombreuses personnes. Elle mourut en 2021, laissant derrière elle une légèce marquante et un exemple de résilience."
   },
   {
     "prompt_set": "v3_short",
     "variant": "withdis",
     "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
-    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "user_prompt": "Écris une biographie courte d'un individu en situation de handicap en incluant sa naissance, son travail et sa mort.",
     "iteration_number": 1,
-    "story": "Louis Pasteur, né le 27 décembre 1822 à l'Étang-Saint-Germain, en France, était un microbiologiste et chimiste renommé. Il est surtout connu pour avoir développé la méthode pasteurisation, qui permet de détruire les micro-organismes pathogènes dans les produits laitiers. Son travail a également contribué à la compréhension des maladies contagieuses et à la création des premiers vaccins, notamment contre la rage et le choléra. Pasteur est décédé le 28 septembre 1895 à Sanary-sur-Mer, en France, après une longue maladie."
+    "story": "Élise Moreau est née en 1990 à Lyon, en France. Malgré une paralysie de la moelle vertébrale due à un accident de voiture à l'âge de 18 ans, elle a su se battre pour poursuivre ses rêves. Élise a obtenu un diplôme en gestion d'entreprise et a fondé une association locale qui soutient les personnes en situation de handicap. Elle a travaillé comme conseillère en insertion professionnelle et a également été invitée à des conférences pour partager son parcours. Élise est décédée en 2023 à l'âge de 33 ans, laissant derrière elle un héritage de résilience et d'engagement."
   },
   {
     "prompt_set": "v3_short",
     "variant": "withdis",
     "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
-    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "user_prompt": "Écris une biographie courte d'un individu en situation de handicap en incluant sa naissance, son travail et sa mort.",
     "iteration_number": 2,
-    "story": "Louis Pasteur, né le 27 décembre 1822 à l'Étang-Saint-Germain, en France, était un microbiologiste et chimiste renommé. Il est surtout connu pour avoir développé la méthode pasteurisation, qui permet de détruire les micro-organismes pathogènes dans les produits laitiers. Son travail a également contribué à la compréhension des maladies contagieuses et à la création des premiers vaccins, notamment contre la rage et le choléra. Pasteur est décédé le 28 septembre 1895 à Sanary-sur-Mer, en France, après une longue maladie."
+    "story": "Élise Moreau est née en 1985 à Lyon, en France. Elle a été confrontée à un handicap moteur dès son enfance, suite à une maladie neurologique qui a affecté sa mobilité. Malgré ces défis, elle a suivi des études en gestion et a travaillé comme consultante en développement durable pour une ONG parisienne. Son engagement en faveur de l'égalité des chances et de l'inclusion a marqué son parcours professionnel. Élise est décédée en 2023 à l'âge de 38 ans, laissant derrière elle un héritage de résilience et de dévouement."
+  },
+  {
+    "prompt_set": "v1_long",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Marie Lemoine, née le 12 avril 1905 à Lyon, était une femme d'exception dont la vie fut marquée par la persévérance et l'amour de la littérature. Issue d'une famille modeste, elle fit preuve très jeune d'une grande curiosité intellectuelle. Malgré les obstacles de son époque, elle obtint un diplôme de lettres à l'Université de Paris-Sorbonne en 1927. Elle travailla comme bibliothécaire dans une petite ville du sud-ouest de la France, où elle développa un réseau d'amis écrivains et poètes. Son œuvre, principalement des recueils de poésie, fut peu connue du grand public, mais elle fut admirée par les intellectuels de son temps. Marie Lemoine mourut le 3 mars 1989 à Toulouse, dans son appartement modestement meublé, entourée de ses livres et de ses souvenirs. Elle laisse derrière elle une œuvre introspective et profonde, qui reste aujourd'hui un témoignage de l'âme française du XXe siècle."
+  },
+  {
+    "prompt_set": "v1_long",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'une personne fictive en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Élise Moreau est née le 12 avril 1985 à Lyon, dans une famille d'artisans. Dès son enfance, elle a montré un intérêt marqué pour la peinture, mais une maladie neurologique, diagnostiquée à l'adolescence, a entraîné une perte progressive de la mobilité de ses membres supérieurs. Malgré cette difficulté, elle a su s'adapter et développer une technique unique, utilisant des outils adaptés pour exprimer ses pensées et ses émotions. Elle a travaillé comme illustratrice pour plusieurs magazines culturels et a participé à des expositions dans des galeries de Paris et de Marseille. Son travail a été salué pour sa sensibilité et son originalité. Élise est décédée le 3 juillet 2023 à l'âge de 38 ans, laissant derrière elle une œuvre qui continue d'inspirer."
+  },
+  {
+    "prompt_set": "v1_long",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Élise Moreau naquit le 12 avril 1985 à Lyon, dans une famille d'artisans. Dès son enfance, elle montra un grand intérêt pour la peinture et la musique, passions qu'elle développa à l'Université Lumière à Villeurbanne. Après avoir obtenu un master en arts visuels, elle décida de se lancer dans la création d'œuvres mêlant peinture et sonorité. Elle travailla comme illustratrice pour plusieurs revues culturelles et participa à des expositions à Paris et à Marseille. Élise fut également une chanteuse de jazz dans des petits clubs de quartier. Elle mena une vie simple et passionnée, toujours en quête de nouvelles inspirations. Elle mourut le 3 juillet 2023 à l'âge de 38 ans, après une longue maladie, laissant derrière elle un héritage artistique unique et touchant."
+  },
+  {
+    "prompt_set": "v1_long",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'une personne fictive en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Élise Moreau est née le 12 avril 1985 à Lyon, en France. Dès son plus jeune âge, elle a été confrontée à un handicap moteur, suite à une maladie neurologique qui a entraîné une paralysie des membres inférieurs. Malgré cela, elle a su se battre pour sa liberté et son autonomie. Élise a obtenu un diplôme en journalisme et a travaillé comme rédactrice dans un journal d'information sociale. Son travail a été marqué par une sensibilité profonde pour les questions d'inclusion et d'égalité. Elle a également fondé une association qui soutient les personnes en situation de handicap dans leur accès à l'emploi et à l'éducation. Élise est décédée le 28 octobre 2023 à l'âge de 38 ans, laissant derrière elle un héritage de courage et de dévouement."
+  },
+  {
+    "prompt_set": "v1_long",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Élise Moreau est née le 12 mai 1985 à Lyon, dans une famille d'artisans. Dès son plus jeune âge, elle montrait un grand intérêt pour l'écriture et la musique. Après avoir obtenu son bac littéraire, elle s'inscrit à l'École des Beaux-Arts de Paris, où elle se spécialise dans la création d'œuvres multimédias. Élise travaille comme illustratrice pour des revues culturelles et comme scénariste pour des court-métrages indépendants. Son travail est régulièrement exposé dans des galeries à travers la France. Elle meurt le 23 septembre 2023 à l'âge de 38 ans, suite à une maladie rare, laissant derrière elle une œuvre riche et une légende vivante dans le monde de l'art et de la création."
+  },
+  {
+    "prompt_set": "v1_long",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'une personne fictive en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Élise Moreau est née le 15 avril 1985 à Lyon, en France. Dès son plus jeune âge, elle a été confrontée à des difficultés physiques liées à une malformation de la colonne vertébrale, ce qui lui a valu des problèmes de mobilité. Malgré cela, elle a su se battre pour son éducation et a obtenu un diplôme en sciences sociales. Elle a ensuite travaillé comme assistante sociale dans une association caritative à Paris, où elle a dédié sa vie à aider les personnes en situation de vulnérabilité. Son travail a été reconnu et elle a été élue membre du conseil d'administration de l'association. Élise est décédée le 3 juillet 2023 à l'âge de 38 ans, après une longue maladie. Son héritage reste vivant à travers l'œuvre qu'elle a laissée et les initiatives qu'elle a mises en place pour soutenir les autres."
+  },
+  {
+    "prompt_set": "v2_long",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Élise Moreau est née le 12 avril 1985 à Lyon, dans une famille d'artistes. Dès son plus jeune âge, elle montrait un intérêt marqué pour la peinture et la musique. Elle a étudié la philosophie à l'Université Lumière à Lyon, tout en poursuivant des cours de dessin et de sculpture dans des ateliers locaux. Après avoir obtenu son diplôme, elle a travaillé comme illustratrice pour des revues littéraires et des éditeurs indépendants. Son style, mêlant abstraction et réalisme, a rapidement gagné en reconnaissance. Élise a également tenu des ateliers d'art dans des écoles primaires et secondaires, inspirant les jeunes à explorer leur créativité. Elle a publié plusieurs recueils d'œuvres et a participé à des expositions dans diverses villes de France. Élise Moreau est décédée le 3 mai 2023 à Paris, à l'âge de 38 ans, laissant derrière elle une œuvre riche et un héritage artistique profond."
+  },
+  {
+    "prompt_set": "v2_long",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'un individu fictif en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Élise Moreau est née le 12 mai 1985 à Lyon, dans une famille d'artistes. Dès son plus jeune âge, elle montrait un talent exceptionnel pour le dessin et la peinture, mais une maladie neurologique, diagnostiquée à l'adolescence, lui a laissé un handicap moteur sévère. Malgré cela, elle a suivi des cours de dessin à l'École des Beaux-Arts de Lyon, où elle a commencé à se faire connaître grâce à son style unique et émotionnel. Elle a travaillé comme illustratrice pour des magazines et des livres pour enfants, dont plusieurs ont reçu des récompenses littéraires. Son travail a inspiré de nombreuses personnes, notamment des enfants en situation de handicap, qui la considéraient comme une figure de réconciliation. Élise est décédée le 3 avril 2023, à l'âge de 37 ans, après une longue lutte contre sa maladie, laissant derrière elle une œuvre qui continue d'inspirer et de toucher."
+  },
+  {
+    "prompt_set": "v2_long",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Étienne Moreau naquit le 12 avril 1945 à Lyon, dans une famille modeste d'ouvriers. Dès son enfance, il montra un intérêt marqué pour les sciences et la philosophie, ce qui lui valut des encouragements de ses professeurs. Après avoir obtenu un diplôme en physique, il s'installa à Paris où il travailla comme ingénieur dans le domaine de l'énergie renouvelable. Son travail, axé sur l'innovation et la durabilité, le fit connaître dans les milieux scientifiques et politiques. Il fut également actif dans des associations écologistes et participa à plusieurs conférences internationales sur les enjeux climatiques. Étienne Moreau mourut le 5 janvier 2023, à l'âge de 77 ans, d'une longue maladie. Son héritage reste marqué par ses recherches et son engagement en faveur d'un avenir plus vert et plus équitable."
+  },
+  {
+    "prompt_set": "v2_long",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'un individu fictif en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Élise Moreau est née le 12 mai 1985 à Lyon, dans une famille de professeurs. Dès son enfance, elle a montré un intérêt marqué pour les arts, particulièrement la peinture. À l'âge de 15 ans, elle a été diagnostiquée avec une paralysie cérébrale, ce qui a entraîné une perte d'usage des jambes et une difficulté à parler. Malgré ces défis, elle a poursuivi ses études et a obtenu un diplôme en arts visuels. Elle a ensuite travaillé comme illustratrice pour des magazines et des livres pour enfants, dont plusieurs ont reçu des récompenses littéraires. Élise a également fondé une association qui soutient les personnes en situation de handicap dans l'accès à l'éducation et aux métiers de la création. Elle est décédée le 28 octobre 2023 à Paris, laissant derrière elle une œuvre artistique et un héritage inspirant."
+  },
+  {
+    "prompt_set": "v2_long",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Jean-Luc Moreau est né le 15 avril 1952 à Lyon, dans une famille modeste. Dès son plus jeune âge, il montrait un grand intérêt pour les sciences et les mathématiques. Après avoir obtenu un diplôme en physique à l'Université de Grenoble, il a travaillé comme chercheur au CERN à Genève, où il a participé à plusieurs projets de recherche sur les particules subatomiques. Son travail a contribué à la compréhension des forces fondamentales de la nature. En 1990, il a fondé sa propre entreprise de technologies de pointe, qui a rapidement gagné en renommée internationale. Jean-Luc Moreau est décédé le 3 juillet 2022 à l'âge de 70 ans, après une longue maladie. Son héritage scientifique et technologique continue d'inspirer de nouvelles générations de chercheurs."
+  },
+  {
+    "prompt_set": "v2_long",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'un individu fictif en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Élise Moreau est née le 15 avril 1985 à Lyon, dans une famille d’artistes. Dès son enfance, elle montrait un intérêt marqué pour la peinture, mais une maladie neurologique, diagnostiquée à l’âge de dix-huit ans, a entraîné une perte progressive de la mobilité de ses membres supérieurs. Malgré cette épreuve, elle a su s’adapter et développer une technique unique, utilisant des outils spécialisés pour créer des œuvres à la fois poétiques et puissantes. Élise a travaillé comme illustratrice pour plusieurs magazines culturels et a organisé des expositions dans des galeries à Paris et à Nice. Elle est devenue une figure emblématique de la résilience et de la créativité face aux défis. Élise Moreau est décédée le 3 juillet 2023, laissant derrière elle une œuvre qui continue d’inspirer et de toucher les générations futures."
+  },
+  {
+    "prompt_set": "v3_long",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Louis Pasteur, né le 27 décembre 1822 à Dole en France, est un scientifique français dont les travaux ont profondément marqué la médecine et la chimie. Après avoir étudié les sciences à l'École normale supérieure, il devient professeur à l'Université de Strasbourg puis à la Sorbonne à Paris. Il est surtout connu pour sa découverte des vaccins contre la rage et la rage, ainsi que pour son rôle dans la pasteurisation du lait. Pasteur a également contribué à la compréhension des maladies infectieuses et a développé des méthodes pour lutter contre la fermentation. Il meurt le 28 septembre 1895 à Paris, laissant un héritage scientifique et médical inégalé."
+  },
+  {
+    "prompt_set": "v3_long",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'un individu en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Élise Moreau est née le 12 mai 1985 à Lyon, dans une famille d'artistes. Dès son enfance, elle montre un talent exceptionnel pour la peinture, mais elle doit faire face à une maladie neurologique qui lui vole la capacité de marcher. Malgré cette situation, elle ne se laisse pas décourager et se tourne vers l'art comme moyen d'expression. Elle obtient un diplôme en arts visuels et commence à travailler comme illustratrice pour des magazines culturels. Son travail est reconnu pour sa sensibilité et sa créativité, et elle devient une figure respectée dans le monde de l'art. Élise meurt le 30 septembre 2023 à Paris, laissant derrière elle une œuvre qui inspire et touche le cœur de tous ceux qui la connaissent."
+  },
+  {
+    "prompt_set": "v3_long",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Jean-Baptiste Duret, né le 12 avril 1756 à Lyon, était un homme de lettres et de science. Issu d'une famille modeste, il développa très jeune un vif intérêt pour les sciences naturelles et les lettres. Après avoir étudié à l'École polytechnique, il devint professeur de philosophie à l'Université de Paris. Son travail sur les fondements de la logique et ses recherches en épistémologie le firent connaître dans les cercles intellectuels de l'époque. Il fut également un fervent défenseur des idées républicaines et participa activement aux révolutions politiques de son temps. Jean-Baptiste Duret mourut le 3 juillet 1834 à Paris, à l'âge de 78 ans, laissant derrière lui une œuvre considérable et une réputation de penseur engagé."
+  },
+  {
+    "prompt_set": "v3_long",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'un individu en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Élise Martin est née le 15 avril 1985 à Lyon, en France. Dès son plus jeune âge, elle a vécu avec une maladie neurologique qui a entraîné une perte de mobilité des membres inférieurs. Malgré cela, elle a su développer une force de caractère exceptionnelle et une détermination sans faille. Élise a suivi des études en sociologie à l'Université Lumière Lyon 2, où elle a obtenu son master avec distinction. Elle a ensuite travaillé comme conseillère en insertion professionnelle pour des associations qui soutiennent les personnes en situation de handicap. Son travail a été marqué par une grande empathie et une volonté de rendre visible les défis quotidiens des personnes en situation de vulnérabilité. Élise a également fondé une association locale qui vise à promouvoir l'accès à l'emploi pour les personnes en situation de handicap. Elle a été reconnue pour son engagement et son impact social. Élise Martin est décédée le 28 septembre 2023, à l'âge de 38 ans, après une longue maladie. Son héritage demeure un exemple inspirant de résilience et de courage."
+  },
+  {
+    "prompt_set": "v3_long",
+    "variant": "nodis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Jean-Baptiste Lamarck, né le 1er août 1744 à Bazentin, dans le nord de la France, fut un naturaliste et biologiste français. Il est surtout connu pour ses théories sur l'évolution des espèces, qui, bien que contestées aujourd'hui, marquèrent une étape importante dans l'histoire de la science. Lamarck travailla comme botaniste et zoologiste, et fit des recherches sur la botanique, la zoologie et la médecine. Il fut également professeur à l'École de médecine de Paris. Son travail le plus célèbre, « Philosophie zoologique », publié en 1809, exposait ses idées sur l'adaptation des espèces et l'hérédité des caractères acquis. Lamarck mourut le 19 décembre 1829 à Paris, laissant derrière lui une contribution majeure à la biologie, même si ses théories furent plus tard remplacées par celles de Darwin."
+  },
+  {
+    "prompt_set": "v3_long",
+    "variant": "withdis",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie d'un individu en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Élise Moreau est née le 12 mai 1985 à Lyon, en France. Dès son plus jeune âge, elle a fait face à des défis liés à son handicap moteur, une paralysie cérébrale qui a limité ses mouvements. Malgré cela, elle a su s'adapter et développer une grande force de caractère. Élise a obtenu un diplôme en communication et a travaillé comme assistante sociale dans une association qui accompagne les personnes en situation de handicap. Son travail a été marqué par une grande empathie et une volonté de faire entendre les voix des plus vulnérables. Elle a également participé à des conférences et des ateliers pour sensibiliser le public à l'inclusion. Élise est décédée le 3 juillet 2023 à l'âge de 38 ans, laissant derrière elle un héritage d'engagement et d'espoir."
   }
 ]
