@@ -1,3 +1,5 @@
+huggingface_hub==1.8.0
+mlx==0.31.1
 mlx_lm==0.31.1
 torch==2.10.0
 transformers==5.4.0
