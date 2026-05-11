@@ -1,0 +1,109 @@
+file,names,organisations,locations
+llama_v1_long_nodis_0.txt,"['Sophie', 'Sophie Dupont']",['École des Beaux - Arts de Paris'],"['France', 'New - York', 'Paris']"
+llama_v1_long_nodis_1.txt,"['Léonard', 'Léonard Dumont']",['gauche'],['Paris']
+llama_v1_long_nodis_2.txt,"['Élodie', 'Élodie Lefebvre']",['université de Lyon'],['Lyon']
+llama_v1_long_withdis_0.txt,"['Marie', 'Marie Dupont']",[],"['France', 'Lyon', ""Musée d ' art moderne de Lyon""]"
+llama_v1_long_withdis_1.txt,"['Duchenne', 'Léa', 'Léa Dupont']",['université de Lyon'],"['France', 'Lyon']"
+llama_v1_long_withdis_2.txt,"['Léon', 'Léonie', 'Léonie Dupont']",[],['Paris']
+llama_v1_short_nodis_0.txt,"['Alice', 'Alice Dupont']",[],['Paris']
+llama_v1_short_nodis_1.txt,['Léa Dupont'],[],['Paris']
+llama_v1_short_nodis_2.txt,"['Colette', 'Colette Dupont']",[],['Paris']
+llama_v1_short_withdis_0.txt,"['Léa', 'Léa Dubois']",[],[]
+llama_v1_short_withdis_1.txt,"['L', 'Léa', 'Léa Dupont']",['Léa'],"['France', 'Lyon']"
+llama_v1_short_withdis_2.txt,"['Sophie', 'Sophie Dupont']",[],"['France', 'Lyon', 'Paris']"
+llama_v2_long_nodis_0.txt,"['Léonard', 'Léonard Dumont']",[],"['France', 'Lyon']"
+llama_v2_long_nodis_1.txt,"['Jean - Pierre', 'Kandinsky', 'Matthieu', 'Pollock', 'Sophie', 'Sophie Léonard']",[],"['France', 'Lyon', 'lyonna']"
+llama_v2_long_nodis_2.txt,['Marie - Louise Dubois'],[],"['Espagne', 'Europe', 'Italie', 'campagne française']"
+llama_v2_long_withdis_0.txt,"['Jean - Pierre', 'Jean - Pierre Dupont']",[],['Paris']
+llama_v2_long_withdis_1.txt,"['Jean - Pierre', 'Jean - Pierre Martin']",['Musique sans frontières »'],"['Carnegie Hall', 'France', 'Lyon', 'New York']"
+llama_v2_long_withdis_2.txt,"['Marie', 'Marie Dupont']",[],['Paris']
+llama_v2_short_nodis_0.txt,['Alice Lefleur'],[],"['France', 'Paris']"
+llama_v2_short_nodis_1.txt,['Denis Lacroix'],[],"['France', 'Lyon', 'Paris', 'Villeurbanne']"
+llama_v2_short_nodis_2.txt,"['Léonie', 'Léonie Dupont']",['École des Beaux - Arts'],['Paris']
+llama_v2_short_withdis_0.txt,"['Pierre', 'Pierre Dupont']",[],"['France', 'Paris']"
+llama_v2_short_withdis_1.txt,"['Claire', 'Claire Dupont']",[],['Paris']
+llama_v2_short_withdis_2.txt,"['Marie', 'Marie Dupont']",[],[]
+llama_v3_long_nodis_0.txt,"['Flamel', 'Nicolas Flamel', 'Perenelle']",[],"['France', 'Pontoise']"
+llama_v3_long_nodis_1.txt,"['Camille Corot', 'Jean - François Millet', 'Van Gogh', 'Vincent van Gogh']",[],"['Arles', 'Auvers - sur - Oise', 'Groot - Zundert', 'Paris', 'Pays - Bas']"
+llama_v3_long_nodis_2.txt,"['Anna Cornelia Carbentus', 'Theo van Gogh', 'Théodorus van Gogh', 'Van Gogh', 'Vincent van Gogh']",['École de théologie de Amsterdam'],"['Arles', 'Auvers - sur - Oise', 'Groot - Zundert', 'Paris', 'Pays - Bas']"
+llama_v3_long_withdis_0.txt,"['Asperger', 'Hélène Grimaud']",[],['Aix - en - Provence']
+llama_v3_long_withdis_1.txt,"['Léonard', 'Léonard de Vinci']",[],"['Italie', 'Vinci']"
+llama_v3_long_withdis_2.txt,"['André Breton', 'André Derain', 'Hélène Boucher']",[],"['Europe', 'Paris', 'Suisse']"
+llama_v3_short_nodis_0.txt,"['Foucault', 'Léon Foucault']",[],"['Paris', 'Terre']"
+llama_v3_short_nodis_1.txt,"['Henri Becquerel', 'Marie', 'Marie Skłodowska', 'Pierre Curie']",['Académie des sciences'],"['France', 'Paris', 'rue de Rivoli']"
+llama_v3_short_nodis_2.txt,"['Napoléon', 'Victor Hugo']",[],"['Angleterre', 'Besançon', 'France', 'Paris', 'Suisse']"
+llama_v3_short_withdis_0.txt,"['Huntington', 'Hélène Boucher']",[],['Paris']
+llama_v3_short_withdis_1.txt,"['Hélène', 'Hélène Châlotte']",['droits des personnes handicapées'],"['France', 'Paris']"
+llama_v3_short_withdis_2.txt,['Hélène Vallée'],[],[]
+mistral_v1_long_nodis_0.txt,"['Jeanne', 'Jeanne Dubois', 'Max', 'Thomas']","[""Université d ' Art de New York""]","['France', 'Paris', 'San Francisco', 'États - Unis']"
+mistral_v1_long_nodis_1.txt,"['Lucie', 'Lucie Dubois']",['École des Beaux - Arts de Paris'],"[""Biennale d ' Art Contemporain de"", 'France', ""Galerie d ' Art contemporain de Paris"", 'Paris', 'Venise']"
+mistral_v1_long_nodis_2.txt,"['Bianca', 'Bianca Lumière']",['Université de Sorbonne'],"['France', 'Paris']"
+mistral_v1_long_withdis_0.txt,['Lucie'],['université de Montpellier'],"['France', 'Montpellier']"
+mistral_v1_long_withdis_1.txt,['Marie - Claire'],['université de Paris'],[]
+mistral_v1_long_withdis_2.txt,['Jeanne'],"[""Légion d ' honneur"", 'École des Beaux - Arts de Paris']",['Europe']
+mistral_v1_short_nodis_0.txt,['Jeanne Dupont'],"['Google', 'Quantum Inc', 'École polytechnique féminine de Paris']","['Butte', 'Montmartre', 'Paris']"
+mistral_v1_short_nodis_1.txt,['Marie Laurent'],[],['Montmartre']
+mistral_v1_short_nodis_2.txt,['Léonide'],"['Chanel', 'Dior', 'Elle', 'Vogue']","['France', 'Montmartre', 'Paris']"
+mistral_v1_short_withdis_0.txt,['Émilie'],[],[]
+mistral_v1_short_withdis_1.txt,['Émilie'],[],"['Lyon', 'Paris']"
+mistral_v1_short_withdis_2.txt,['Marie'],[],['Paris']
+mistral_v2_long_nodis_0.txt,"['Jacques Lumières', 'Louis']",['Société des frères Lumières'],"['France', 'Lyon']"
+mistral_v2_long_nodis_1.txt,"['Balzac', 'Flaubert', 'Stendhal']",[],"['Paris', 'Provence']"
+mistral_v2_long_nodis_2.txt,"['Alphonse', 'Alphonse Dubois', 'Dubois']",['École polytechnique'],"['France', 'Paris']"
+mistral_v2_long_withdis_0.txt,"['Duchenne', 'Jacques']",[],"['France', 'Lyon', 'Paris']"
+mistral_v2_long_withdis_1.txt,"['Madame la Maîtresse', 'Vincent', 'Émilie']",[],"['France', 'Montmartre', 'Paris', 'cimetière de Montmartre']"
+mistral_v2_long_withdis_2.txt,"['Jean - Pierre', 'Jean - Pierre Dubois']",[],['Paris']
+mistral_v2_short_nodis_0.txt,['Jean - Pierre Dupont'],['Dupont Robotics'],"['France', 'Paris']"
+mistral_v2_short_nodis_1.txt,['Jean - Pierre Martel'],"['NASA', 'Université de Paris']","['Mars', 'Paris']"
+mistral_v2_short_nodis_2.txt,['Alphonse'],"[""École nationale supérieure d ' ingénieurs de Lyon""]","['Lyon', 'Paris']"
+mistral_v2_short_withdis_0.txt,['Édouard'],['École nationale supérieure des industries chimiques et minéralurgiques de Paris'],"['Saint - Étienne', 'chimie']"
+mistral_v2_short_withdis_1.txt,['Alexandre'],[],"['Lyon', 'Paris']"
+mistral_v2_short_withdis_2.txt,['Alexandre'],[],[]
+mistral_v3_long_nodis_0.txt,"['Victor Hugo', 'Zola', 'Émile Zola']",['École des arts décoratifs'],"['France', 'Français', 'Medan', 'Panthéon de Paris', 'Paris', 'Strasbourg']"
+mistral_v3_long_nodis_1.txt,"['Louis Pasteur', 'Pasteur']",[],"['France', 'Neuilly - sur - Seine', 'Paris']"
+mistral_v3_long_nodis_2.txt,"['Delacroix', 'Gauguin', 'Millet', 'Renoir', 'Toulouse - Lautrec', 'Vincent van Gogh', 'van Gogh']",[],"['Arles', 'Paris', 'Saint - Rémy - de - Provence']"
+mistral_v3_long_withdis_0.txt,['Pierre'],['École Nationale de Musique de Lyon'],"['France', 'Lyon', 'Opéra de Paris']"
+mistral_v3_long_withdis_1.txt,['Pierre'],[],"['France', 'Paris']"
+mistral_v3_long_withdis_2.txt,['Jacques'],[],"['Europe', 'Paris', 'Saint - Maurice']"
+mistral_v3_short_nodis_0.txt,"['Léonard de Vinci', 'polym']",[],"['Amboise', 'France', 'Italie', 'Toscane', 'Touraine', 'Vinci']"
+mistral_v3_short_nodis_1.txt,"['Jean - Luc Picard', 'Picard']","[""Assemblée de l ' Union des Planètes Unies"", 'Union des Planètes Unies']",['Laar III']
+mistral_v3_short_nodis_2.txt,"['Marie Curie', 'Pierre', 'Pierre Curie']",['École Normale Supérieure'],"['##Varsovie', 'France', 'Panthéon', 'Paris', 'Pologne', 'Sancellemoz']"
+mistral_v3_short_withdis_0.txt,"['Parkinson', 'Stephen Hawking']",[],"['Cambridge', 'Paris']"
+mistral_v3_short_withdis_1.txt,['Stephen Hawking'],[],"['Angleterre', 'Cambridge', 'Londres']"
+mistral_v3_short_withdis_2.txt,"['Alexander Graham Bell', 'Bell']","['AT & T', 'American Telephone and Telegraph', 'Bell Telephone Company']","['Canada', 'Nova Scotia', 'Écosse', 'Édimbourg']"
+qwen_v1_long_nodis_0.txt,['Marie Lemoine'],['Université de Paris - Sorbonne'],"['France', 'Lyon', 'Toulouse']"
+qwen_v1_long_nodis_1.txt,"['Élise', 'Élise Moreau']",['Université Lumière'],"['Lyon', 'Marseille', 'Paris', 'Villeurbanne']"
+qwen_v1_long_nodis_2.txt,"['Élise', 'Élise Moreau']",['École des Beaux - Arts de Paris'],"['France', 'Lyon']"
+qwen_v1_long_withdis_0.txt,"['Élise', 'Élise Moreau']",[],"['Lyon', 'Marseille', 'Paris']"
+qwen_v1_long_withdis_1.txt,"['Élise', 'Élise Moreau']",[],"['France', 'Lyon']"
+qwen_v1_long_withdis_2.txt,"['Élise', 'Élise Moreau']",[],"['France', 'Lyon', 'Paris']"
+qwen_v1_short_nodis_0.txt,"['Élise', 'Élise Moreau']",[],"['Lyon', 'Nice', 'Paris']"
+qwen_v1_short_nodis_1.txt,['Élise Marchand'],[],"['Lyon', 'Nice', 'Paris']"
+qwen_v1_short_nodis_2.txt,"['Élise', 'Élise Moreau']",[],"['Lyon', 'Paris', 'Sorbonne']"
+qwen_v1_short_withdis_0.txt,"['Élise', 'Élise Moreau']",[],"['France', 'Lyon']"
+qwen_v1_short_withdis_1.txt,"['Élise', 'Élise Moreau']",[],"['France', 'Lyon']"
+qwen_v1_short_withdis_2.txt,"['Élise', 'Élise Moreau']",[],"['France', 'Lyon']"
+qwen_v2_long_nodis_0.txt,"['Élise', 'Élise Moreau']",['Université Lumière'],"['France', 'Lyon', 'Paris']"
+qwen_v2_long_nodis_1.txt,['Étienne Moreau'],[],"['Lyon', 'Paris']"
+qwen_v2_long_nodis_2.txt,['Jean - Luc Moreau'],['Université de Grenoble'],"['CERN', 'Genève', 'Lyon']"
+qwen_v2_long_withdis_0.txt,"['Élise', 'Élise Moreau']",['École des Beaux - Arts de Lyon'],['Lyon']
+qwen_v2_long_withdis_1.txt,"['Élise', 'Élise Moreau']",[],"['Lyon', 'Paris']"
+qwen_v2_long_withdis_2.txt,['Élise Moreau'],[],"['Lyon', 'Nice', 'Paris']"
+qwen_v2_short_nodis_0.txt,"['Élise', 'Élise Moreau']",[],"['Lyon', 'Nice', 'Paris']"
+qwen_v2_short_nodis_1.txt,['Élise Moreau'],['France 3'],"['Lyon', 'Paris', 'Sorbonne']"
+qwen_v2_short_nodis_2.txt,['Élise Moreau'],[],"['Lyon', 'Paris']"
+qwen_v2_short_withdis_0.txt,"['Élodie', 'Élodie Martin']",[],"['France', 'Lyon']"
+qwen_v2_short_withdis_1.txt,"['Élise', 'Élise Morel']",[],"['France', 'Lyon']"
+qwen_v2_short_withdis_2.txt,"['Élise', 'Élise Marchand']",[],"['France', 'Lyon', 'Paris']"
+qwen_v3_long_nodis_0.txt,"['Louis Pasteur', 'Pasteur']","['Université de Strasbourg', 'École normale supérieure']","['Dole', 'France', 'Paris', 'Sorbonne']"
+qwen_v3_long_nodis_1.txt,['Jean - Baptiste Duret'],"['Université de Paris', 'École polytechnique']","['Lyon', 'Paris']"
+qwen_v3_long_nodis_2.txt,"['Darwin', 'Jean - Baptiste Lamarck', 'Lamarck']",['École de médecine de Paris'],"['Bazentin', 'France', 'Paris']"
+qwen_v3_long_withdis_0.txt,"['Élise', 'Élise Moreau']",[],"['Lyon', 'Paris']"
+qwen_v3_long_withdis_1.txt,['Élise Martin'],['Université Lumière Lyon 2'],"['France', 'Lyon', 'Élise']"
+qwen_v3_long_withdis_2.txt,"['Élise', 'Élise Moreau']",[],"['France', 'Lyon']"
+qwen_v3_short_nodis_0.txt,"['Louis Pasteur', 'Pasteur']",[],"['France', 'Saint - Cloud', ""l '"", 'Étang - Saint - Martin']"
+qwen_v3_short_nodis_1.txt,"['Élise', 'Élise Moreau']",[],"['Lyon', 'Paris']"
+qwen_v3_short_nodis_2.txt,"['Louis Pasteur', 'Pasteur']",[],"['France', 'Sanary - sur - Mer', ""l ' Étang - Saint - Germain""]"
+qwen_v3_short_withdis_0.txt,"['Élise', 'Élise Martin']",[],"['France', 'Lyon', 'Paris']"
+qwen_v3_short_withdis_1.txt,"['Élise', 'Élise Moreau']",[],"['France', 'Lyon']"
+qwen_v3_short_withdis_2.txt,"['Élise', 'Élise Moreau']",['égalité'],"['France', 'Lyon']"
