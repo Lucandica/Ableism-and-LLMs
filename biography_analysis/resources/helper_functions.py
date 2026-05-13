@@ -101,5 +101,5 @@ def plot_version_summary(df, columns: list[str], title: str, fig_width: int = 14
             ax.grid(axis="x", linestyle="--", alpha=0.4, color="grey")
 
     plt.tight_layout()
-    plt.show()
     plt.savefig(f"./outputs/{title}.pdf")
+    plt.show()
