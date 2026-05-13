@@ -102,3 +102,4 @@ def plot_version_summary(df, columns: list[str], title: str, fig_width: int = 14
 
     plt.tight_layout()
     plt.show()
+    plt.savefig(f"./outputs/{title}.pdf")
