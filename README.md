@@ -13,10 +13,10 @@ Ableism-and-LLMs/
 ├── biography_generation/       # Scripts to generate biographies using LLMs
 ├── biography_analysis/         # Analysis notebooks and resources
 │   ├── resources/
-│   │   ├── gender/             # Gender detection lexical resources (epicene, markers) (based on Ducel et al., 2024)
+│   │   ├── gender/             # Gender detection lexical resources (based on Ducel et al., 2024)
 │   │   ├── disabilities/       # Disability detection module
 │   │   └── name_entities/      # Named entity recognition module
-│   ├── outputs/                # Analysis outputs (CSV results, plots)
+│   ├── outputs/                # Analysis outputs (CSV results)
 │   ├── biographies_parsed.csv  # Parsed biographies dataset
 │   └── biographies_analysis.ipynb
 ├── generated_biographies/      # LLM-generated biography files (output of generation step)
