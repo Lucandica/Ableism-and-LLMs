@@ -4,6 +4,7 @@ from collections import Counter
 from sklearn.metrics import cohen_kappa_score
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
+from functools import reduce
 
 def get_cohen_kappa(csv_path:str, column1:str, column2:str):
     """
@@ -103,3 +104,66 @@ def plot_version_summary(df, columns: list[str], title: str, fig_width: int = 14
     plt.tight_layout()
     plt.savefig(f"./outputs/{title}.pdf")
     plt.show()
+
+
+# Sheet merging for complexity features
+TARGET_COLUMNS = [
+    "doc_id","word_count","unique_word_count","content_word_count","unique_content_word_count",
+    "sentence_count","paragraph_count","avg_word_length","char_count","char_count_content",
+    "avg_sentence_length","avg_content_word_length","count_NA","count_ADJ","count_ADP",
+    "count_ADV","count_AUX","count_CCONJ","count_DET","count_INTJ","count_NOUN","count_NUM",
+    "count_PRON","count_PROPN","count_PUNCT","count_SCONJ","count_SYM","count_VERB","count_X",
+    "prop_NA","prop_ADJ","prop_ADP","prop_ADV","prop_AUX","prop_CCONJ","prop_DET","prop_INTJ",
+    "prop_NOUN","prop_NUM","prop_PRON","prop_PROPN","prop_PUNCT","prop_SCONJ","prop_SYM",
+    "prop_VERB","prop_X","present_count","past_count","future_count","conditional_count",
+    "subjunctive_count","indicative_count","imperative_count","infinitive_count",
+    "past_participle_count","present_participle_count","past_simple_count","present_prop",
+    "past_prop","future_prop","conditional_prop","subjunctive_prop","indicative_prop",
+    "imperative_prop","infinitive_prop","past_participle_prop","present_participle_prop",
+    "past_simple_prop","TTR","maas","MATTR","simpsons_D","TTR_content","maas_content",
+    "MATTR_content","simpsons_D_content","maas_verb","simpsons_D_verb","avg_sent_height",
+    "avg_sent_height_adj","sd_sent_height","avg_dependency_depth_adj","avg_sd_depth",
+    "avg_branching_factor","avg_max_incomplete_deps","avg_max_incomplete_deps_adj",
+    "avg_incomplete_deps","avg_incomplete_deps_adj","n","s","total_paths",
+    "avg_dependency_depth","prop_hf","prop_hi","avg_head_distance","avg_head_distance_adj",
+    "max_head_distance","max_head_distance_adj","dependency_direction_index",
+    "avg_integration_cost","avg_clause_length","complex_nom_per_sent","complex_verb_per_sent",
+    "avg_dep_dist","avg_dep_count","clausal_density","mean_pos_surprisal","sd_pos_surprisal",
+    "mean_pos_entropy","sd_pos_entropy","mean_pos_entropy_reduction","sd_pos_entropy_reduction",
+    "token_sent_overlap_prev1","token_sent_overlap_prev5","lemma_sent_overlap_prev1",
+    "lemma_sent_overlap_prev5","token_doc_overlap","content_sent_overlap_prev1",
+    "content_sent_overlap_prev5","content_lemma_sent_overlap_prev1",
+    "content_lemma_sent_overlap_prev5","content_doc_overlap","cosine_sent","cosine_content"
+]
+
+def xlsx_to_csv(xlsx_path: str, output_path: str) -> pd.DataFrame:
+    all_sheets = pd.read_excel(xlsx_path, sheet_name=None)
+
+    relevant = []
+    for name, df in all_sheets.items():
+        if "doc_id" not in df.columns:
+            continue
+        # Skip sheets that are not doc-level (doc_id not unique = sentence/token level)
+        if df["doc_id"].duplicated().any():
+            continue
+        useful_cols = ["doc_id"] + [c for c in df.columns if c in TARGET_COLUMNS and c != "doc_id"]
+        if len(useful_cols) > 1:
+            relevant.append(df[useful_cols])
+
+    merged = reduce(lambda l, r: pd.merge(l, r, on="doc_id", how="outer"), relevant)
+    merged = merged.reindex(columns=TARGET_COLUMNS)
+    merged.to_csv(output_path, index=False)
+    return merged
+
+def parse_doc_id(df):
+    parts = df["doc_id"].str.replace(".txt", "", regex=False).str.split("_")
+    
+    new_cols = pd.concat([
+        parts.str[0].rename("model"),
+        parts.str[1].rename("prompt_version"),
+        parts.str[2].map({"short": "MLX", "long": "Transformers"}).rename("technique"),
+        parts.str[3].map({"withdis": True, "nodis": False}).rename("disability_in_prompt"),
+        parts.str[4].astype(int).rename("run"),
+    ], axis=1)
+    
+    return pd.concat([df, new_cols], axis=1)
