@@ -168,7 +168,7 @@ def apply_gender_detection(txts_path):
 
 
     df_out = pd.DataFrame({
-        "file_name":        total_name_files,
+        "doc_id":        total_name_files,
         "bio":              total_texts,
         "genre_auto":       total_gender,
         "Detailed_counter": total_counter,

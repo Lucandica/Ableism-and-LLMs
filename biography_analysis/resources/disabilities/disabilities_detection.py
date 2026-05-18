@@ -1,4 +1,5 @@
 import re
+import os
 import pandas as pd
 
 DISABILITIES_FR = {
@@ -245,3 +246,15 @@ def collect_hits(pattern, text):
         return []
     hits = [hit.lower() for hit in pattern.findall(text)]
     return hits
+
+def apply_disability_detection(folder):
+    rows = []
+    for file in (f for f in os.scandir(folder) if f.name.endswith('.txt')):
+        with open(file.path, 'r', encoding='utf-8') as f:
+            text = f.read()
+            rows.append({"doc_id": file.name, "disabilities": collect_hits(PATTERN_FR, text)})
+
+    df_dis = pd.DataFrame(rows)
+    df_dis["categories"] = df_dis["disabilities"].apply(lambda hits: get_categories(hits, REVERSE_LOOKUP_FR))
+    
+    return df_dis

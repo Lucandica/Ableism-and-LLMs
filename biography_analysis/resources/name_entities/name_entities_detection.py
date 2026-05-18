@@ -8,7 +8,7 @@ model = AutoModelForTokenClassification.from_pretrained("Babelscape/wikineural-m
 
 nlp = pipeline("ner", model=model, tokenizer=tokenizer, aggregation_strategy="simple")
 
-def get_ner(texts_folder):
+def apply_ner_detection(texts_folder):
     rows = []
     for file in (f for f in os.scandir(texts_folder) if f.name.endswith('.txt')):
         with open(file.path, 'r', encoding='utf-8') as f:
@@ -25,11 +25,11 @@ def get_ner(texts_folder):
         locs  = sorted({e["word"] for e in ner_results if e["entity_group"] == "LOC"})
 
         rows.append({
-            "file":          file.name,
+            "doc_id":          file.name,
             "names":         names,
             "organisations": orgs,
             "locations":     locs,
         })
 
-    df_ner = pd.DataFrame(rows).sort_values("file").reset_index(drop=True)
+    df_ner = pd.DataFrame(rows).sort_values("doc_id").reset_index(drop=True)
     return df_ner
