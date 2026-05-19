@@ -73,11 +73,13 @@ The project is split into two main steps:
    - Gender marker detection for gender inferences
    - Disability detection and categorisation
    - Named entity recognition (names, organisations, locations)
-   - Lexico-syntactic complexity analysis (via ALSI)
+   - Cooccurences of _malgré cela_ with disabilities
 
    Outputs (CSV/XLSX files) are saved in `biography_analysis/outputs/`.
 
-   **Complexity analysis** can also be run standalone:
+   **Statistical complexity of features** can also be run standalone and will give lexico-syntactic complexity analysis (via ALSI)
+
+   Can be run in order to obtain statistical comparison of complexity features of text over different categories: models, disability in prompt, prompt version, run and technique (MLX, Transformers).
 
    ```bash
    cd biography_analysis
@@ -86,6 +88,16 @@ The project is split into two main steps:
    ```
 
    This requires R and the ALSI dependencies (see Requirements above). Generated biographies must be placed in `biography_analysis/resources/complexity_tool/ALSI-main/corpus/biographies/` before running.
+   
+   **Representation analysis**
+   
+   Can be run in order to obtain representation markers for gender, disabilities and NER for each biographies. The result can be found in `biography_analysis/outputs/gender_dis_ner_detection.csv`.
+   
+   ```bash
+   cd biography_analysis
+   python representation_analysis.py
+   ```
+   
 
 ## Third-party tools
 
