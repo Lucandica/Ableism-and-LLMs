@@ -32,7 +32,7 @@ def detect_malgre_cela(generation_dir: Path = GENERATION_DIR, model: str = "fr_d
     nlp = spacy.load(model)
 
     rows = []
-    for file in sorted(f for f in os.scandir(generation_dir) if f.name.endswith(".txt")):
+    for file in sorted((f for f in os.scandir(generation_dir) if f.name.endswith(".txt")), key=lambda f: f.name):
         doc_id = file.name.replace(".txt", "")
         with open(file.path, "r", encoding="utf-8") as fh:
             text = fh.read()
