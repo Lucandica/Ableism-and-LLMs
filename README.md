@@ -21,6 +21,7 @@ Ableism-and-LLMs/
 │   ├── outputs/                # Analysis outputs (CSV/XLSX results)
 │   ├── complexity_statistics.py
 │   ├── representation_analysis.py
+│   ├── trope_detection.py
 │   └── biographies_analysis.ipynb
 ├── generated_biographies/      # LLM-generated biography files (output of generation step)
 ├── requirements/
@@ -97,7 +98,17 @@ The project is split into two main steps:
    cd biography_analysis
    python representation_analysis.py
    ```
+
+   **Trope detection**
+
+   Detects occurrences of the _malgré cela_ ("despite that") construction across all biographies using spaCy dependency parsing (`fr_dep_news_trf`). For each match, it retrieves the preceding sentence and checks it for disability keyword hits. Results are saved to `biography_analysis/outputs/malgre_cela_detection.csv`.
+
+   ```bash
+   cd biography_analysis
+   python trope_detection.py
+   ```
    
+   *More contrastive expression will be added later.s*
 
 ## Third-party tools
 
