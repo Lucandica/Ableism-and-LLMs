@@ -1,0 +1,9 @@
+{
+  "story": "Naissance : Dans la petite ville de Montmartre, en 1874, naquit une jeune fille nommée Amélie. Fille d'un modeste artisan, elle grandit dans une atmosphère simple et paisible.
+
+   Travail : À l'âge adulte, Amélie se rendit à Paris pour poursuivre ses études. Elle s'intéressa à la musique, à la peinture et à la littérature. Ses talents furent rapidement reconnus et elle commença à travailler dans un studio d'enregistrement de musique. Elle devint une compositrice remarquable, créant des œuvres qui touchaient les cœurs de tous.
+
+   Sa carrière musicale la conduisit à voyager autour du monde, où elle rencontra des artistes de renom et collabora à des projets d'envergure. Son talent et son humilité la firent admirer et respecter de tous.
+
+   Mort : Après une longue et fructueuse carrière, Amélie décida de se retirer dans sa ville natale de Montmartre. Elle y passa ses dernières années en compagnie de ses amis et de ses œuvres. Elle décéda en 1955, laissant derrière elle une œuvre considérable et une influence durable sur le monde de la musique.
+}
