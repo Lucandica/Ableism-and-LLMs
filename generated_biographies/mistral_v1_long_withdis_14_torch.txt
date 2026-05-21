@@ -1,0 +1,9 @@
+{
+  "story": "Une histoire de perseverance et d'inspiration, celle de Lucie Leclerc, une femme extraordinaire naît le 15 juin 1975 à Lyon, en France. Diagnostiquée sourde à l'âge de quatre ans, Lucie ne renonce jamais à rêver et à poursuivre ses ambitions. Ses parents, encouragés par sa volonté indomptable, la placent dans une école spécialisée pour les sourds. C'est là qu'elle apprend à communiquer avec l'aide de la langue des signes française.
+
+  À l'âge adulte, Lucie décide de devenir enseignante pour aider les jeunes sourds à surmonter les difficultés qu'elle a elle-même rencontrées. Elle obtient un diplôme d'enseignement supérieur spécialisé en enseignement des sourds et se met à enseigner dans une école pour les enfants sourds de Lyon. Elle est connue pour son énergie et son enthousiasme envers son travail, encouragant chaque élève à atteindre son plein potentiel.
+
+  En 2008, Lucie est nommée directrice de l'école pour les enfants sourds de Lyon. Sous sa direction, l'école connaît une période de croissance exceptionnelle, avec une augmentation du nombre d'élèves et d'équipements modernes. Lucie est également engagée dans de nombreuses initiatives pour soutenir les sourds et les personnes handicapées, ainsi que pour promouvoir l'inclusion dans la société.
+
+  Malheureusement, Lucie est touchée par un cancer en 2020. Malgré son combat courageux, elle perd la bataille le 1er janvier 2021. Son décès est un grand coup pour la communauté des sourds et des personnes handicapées de Lyon, ainsi que pour tous ceux qui ont été toucheés par son rayonnement positif. Elle laisse une école prospère et une communauté inspirée, qui continuera à honorer son souvenir.
+}
