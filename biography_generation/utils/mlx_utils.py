@@ -2,7 +2,7 @@ from utils.common import get_inputs, parse_json_response
 from mlx_lm.sample_utils import make_sampler, make_logits_processors
 from mlx_lm import load, generate
 
-def load_model(model_id: str):
+def load_model_mlx(model_id: str):
         return load(model_id["mlx"])
 
 def define_parameters(params: dict):
@@ -18,7 +18,7 @@ def define_parameters(params: dict):
 
     return sampler, logits_processors
 
-def generate_biography(model, tokenizer, user_prompt: str, params: dict, max_tokens=640, system_prompt=None, enable_thinking=None, verbose=True):
+def generate_biography_mlx(model, tokenizer, user_prompt: str, params: dict, max_tokens=640, system_prompt=None, enable_thinking=None, verbose=True):
     sampler, logits_processors = define_parameters(params=params)
     response = generate(
         model=model,

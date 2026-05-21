@@ -2,13 +2,13 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from utils.common import get_inputs, parse_json_response
 
-def load_model(model_id: str):
+def load_model_torch(model_id: str):
     tokenizer = AutoTokenizer.from_pretrained(model_id["torch"])
-    model = AutoModelForCausalLM.from_pretrained(model_id["torch"], torch_dtype=torch.float16)
+    model = AutoModelForCausalLM.from_pretrained(model_id["torch"], dtype=torch.float16, device_map="auto")
     return model, tokenizer
 
 
-def generate_biography(model, tokenizer, user_prompt, params, system_prompt=None, max_tokens=2048, enable_thinking = None):
+def generate_biography_torch(model, tokenizer, user_prompt, params, system_prompt=None, max_tokens=2048, enable_thinking = None):
     inputs = tokenizer(
         get_inputs(tokenizer=tokenizer, user_prompt=user_prompt, system_prompt=system_prompt, enable_thinking=enable_thinking,),
         return_tensors="pt"
