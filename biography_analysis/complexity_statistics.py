@@ -57,8 +57,8 @@ TARGET_COLUMNS = [
 ]
 
 # Columns added by parse_doc_id — excluded from metric computations, those are the columns to compare. Modify if different
-PARSED_COLUMNS = ["model", "prompt_version", "technique", "disability_in_prompt", "run"]
-NON_METRICS_COLUMNS = ["doc_id"] + PARSED_COLUMNS
+PARSED_COLUMNS = ["model", "quant", "disability_in_prompt"]
+NON_METRICS_COLUMNS = ["doc_id", "run", "prompt_version",] + PARSED_COLUMNS
 
 def xlsx_to_csv(xlsx_path: str, output_path: str) -> pd.DataFrame:
     all_sheets = pd.read_excel(xlsx_path, sheet_name=None)
