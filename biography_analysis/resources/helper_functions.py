@@ -38,8 +38,12 @@ def get_versions(df):
 
 def parse_list(val):
     if isinstance(val, str):
-        return ast.literal_eval(val)
-    return val if isinstance(val, list) else []
+        result = ast.literal_eval(val)
+    elif isinstance(val, list):
+        result = val
+    else:
+        return []
+    return list(dict.fromkeys(result))
 
 def plot_version_summary(df, columns: list[str], title: str, fig_width: int = 14):
     """
@@ -112,10 +116,10 @@ def parse_doc_id(df):
     
     new_cols = pd.concat([
         parts.str[0].rename("model"),
-        parts.str[1].rename("prompt_version"),
-        parts.str[2].map({"short": "MLX", "long": "Transformers"}).rename("technique"),
+        (parts.str[1] + "_" + parts.str[2]).rename("prompt_version"),
         parts.str[3].map({"withdis": True, "nodis": False}).rename("disability_in_prompt"),
         parts.str[4].astype(int).rename("run"),
+        parts.str[5].rename("quant"),
     ], axis=1)
     
     return pd.concat([df, new_cols], axis=1)
