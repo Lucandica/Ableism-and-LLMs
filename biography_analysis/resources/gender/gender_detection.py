@@ -11,8 +11,6 @@ RESOURCES_GENDER_FOLDER = "resources/gender"
 
 nlp = spacy.load("fr_dep_news_trf")
 
-
-
 def resolve_gender(counter):
     """Resolve a gender Counter into a single label."""
     if len(counter) > 0:
@@ -23,6 +21,48 @@ def resolve_gender(counter):
     if len(counter_val) > 1 and len(set(counter_val)) == 1:
         res = "Ambigu"
     return res
+
+
+def refers_to_excluded_agent(token, excluded):
+    """Return True if any ancestor of `token` in the dependency tree is one of the
+    excluded relation nouns (e.g. 'mari', 'fille'). Used to filter out tokens that
+    describe someone OTHER than the patient, e.g. 'poète' in 'son futur mari, un poète'
+    where 'poète' is an apposition of 'mari', or 'boulanger' in "Fille d'un boulanger"
+    where 'boulanger' is an nmod of 'Fille'."""
+    return any(ancestor.text.lower() in excluded for ancestor in token.ancestors)
+
+
+def modifies_unmarked_epicene(token, effective_head, epicene):
+    """Return True if `token` is an ADJ modifying an épicène profession noun
+    (e.g. 'soprano', 'juge') that has no gender-determining article. In such
+    cases the ADJ's grammatical gender reflects the noun's conventional default,
+    not the referent's actual gender (e.g. 'premier soprano' is masc even for a
+    female singer). Mirrors the existing logic used for the épicène noun itself."""
+    if token.pos_ != "ADJ":
+        return False
+    if effective_head.text.lower() not in epicene:
+        return False
+    has_gendered_det = any(
+        c.dep_ == "det" and c.text.lower() in ("un", "le", "une", "la")
+        for c in effective_head.children
+    )
+    return not has_gendered_det
+
+
+# Relation nouns REMOVED from agents_hum entirely: they almost never describe the
+# patient herself in clinical/biographical text — they describe a relative or
+# close contact, so we don't want them to fire as agent markers on their own.
+EXCLUDED_FROM_AGENTS = {
+    "personne", "mari", "épouse", "époux", "monsieur", "madame"
+}
+
+# Superset used ONLY for filtering DESCENDANTS in the dependency tree. We keep
+# 'fille' and 'fils' in agents_hum because patient-introduction patterns like
+# "Fille d'un boulanger, elle..." legitimately mark the patient — but anything
+# hanging UNDER such a fille/fils node ('boulanger' here) is about the relative,
+# so we use this wider list when walking ancestors.
+RELATIVE_NOUNS = EXCLUDED_FROM_AGENTS | {"fille", "fils"}
+
 
 def get_gender(text, details=False):
     """Apply linguistic rules based on Spacy tags to detect the THIRD person singular gender
@@ -49,8 +89,9 @@ def get_gender(text, details=False):
     with open(f"{RESOURCES_GENDER_FOLDER}/lexical_res_P3_fr.json", encoding="utf-8") as f: #MODIFIED: path to file
         agents_hum = json.load(f)
 
-    # Removing nouns referring to medical or judiciary jobs that often appear (in clinical cases) but to mention another person, not the patient
-    agents_hum = [el for el in agents_hum if el not in ["personne", "mari", "époux", "épouse", "fille", "fils"]]
+    # Removing nouns referring to relatives or close contacts that often appear (in
+    # clinical/biographical cases) but to mention another person, not the patient
+    agents_hum = [el for el in agents_hum if el not in EXCLUDED_FROM_AGENTS]
 
     # list of identified gender tags in the adj/verbs of the text
     gender = []
@@ -62,10 +103,16 @@ def get_gender(text, details=False):
     for sent in doc.sents:
         if "laissant derrière elle" in sent.text:
             gender.append("Fem")
-            gender_markers.append("sexe féminin")
+            gender_markers.append("laissant derrière elle")
+        elif "laisse derrière elle" in sent.text:
+            gender.append("Fem")
+            gender_markers.append("laisse derrière elle")
         elif "laissant derrière lui" in sent.text:
             gender.append("Masc")
-            gender_markers.append("sexe masculin")
+            gender_markers.append("laissant derrière lui")
+        elif "laisse derrière lui" in sent.text:
+            gender.append("Masc")
+            gender_markers.append("laisse derrière lui")
 
         this_sent = []
         for token in sent:
@@ -85,10 +132,16 @@ def get_gender(text, details=False):
             # and it does not have the auxiliary "avoir" (= it refers to a state and not an action)
             cond_pos = (token.pos_ == "ADJ" or token.pos_ == "VERB")
             cond_noavoir = (("a-aux:tense" not in this_sent and "avoir-aux:tense" not in this_sent) or ("a-aux:tense" in this_sent and "été-aux:pass" in this_sent))
+            # For coordinated adjectives ("intellectuel et culturel"), token.head is the
+            # first adjective, not the noun being modified. Walk up through ADJ ancestors
+            # to find the actual head noun (e.g. 'héritage' in 'un héritage intellectuel et culturel').
+            effective_head = token.head
+            while effective_head.pos_ == "ADJ" and effective_head.head != effective_head:
+                effective_head = effective_head.head
             cond_adj_pp = cond_pos and (
-                    ((token.head.text.lower() in agents_hum or (
-                                prenom_initiale and token.head.text == prenom_initiale[0])) and cond_noavoir) or (
-                            token.head.pos_ != "NOUN" and cond_noavoir and cond_agt_avt))
+                    ((effective_head.text.lower() in agents_hum or (
+                                prenom_initiale and effective_head.text == prenom_initiale[0])) and cond_noavoir) or (
+                            effective_head.pos_ != "NOUN" and cond_noavoir and cond_agt_avt))
             # Manually fix Spacy mistakes (mislabeling some Feminine words as Masculine ones)
             erreurs_genre = ["inscrite", "technicienne"]
 
@@ -97,8 +150,18 @@ def get_gender(text, details=False):
                     t.pos_ == "PROPN" and "nsubj" in t.dep_ for t in token.head.children) and not any(
                     t.pos_ == "NOUN" and t.text.lower() not in agents_hum and "attr" in t.dep_ for t in token.head.children)      
 
-            # The candidate must be a noun referring to an agent OR an adj/past participle
-            if cond_agt or cond_adj_pp or cond_propn_subj:
+            # The candidate must be a noun referring to an agent OR an adj/past participle,
+            # AND it must be singular (plurals like 'reconnus' refer to several people, not the subject),
+            # AND it must not be attached (directly or transitively) to a relative noun
+            # (e.g. 'boulanger' in "Fille d'un boulanger" hangs under 'Fille' as nmod;
+            #  'poète' in 'son futur mari, un poète' hangs under 'mari'),
+            # AND if it's an ADJ, it must not modify an épicène profession noun without
+            # a gendered determiner (e.g. 'premier' in 'premier soprano' doesn't tell us
+            # about the referent's gender, only the noun's conventional grammatical default)
+            if (cond_agt or cond_adj_pp or cond_propn_subj) \
+                    and "Plur" not in token.morph.get("Number") \
+                    and not refers_to_excluded_agent(token, RELATIVE_NOUNS) \
+                    and not modifies_unmarked_epicene(token, effective_head, epicene_jobs):
                 token_gender = token.morph.get('Gender')
                 # If the token has a gender label, is not epicene nor in gender-inclusive form, then we add it to the gender markers.
                 if token_gender and token.text.lower() not in epicene_jobs and "(" not in token.text.lower() and token.text.lower() not in erreurs_genre: #(e
@@ -119,21 +182,29 @@ def get_gender(text, details=False):
             if details:
                 print(token.text.lower(), token.pos_, token.dep_, token.lemma_, token.morph.get("Gender"), token.morph.get("Number"))
 
+    pronoun_counts = {"il": 0, "elle": 0}
+    for token in doc:
+        if token.pos_ == "PRON" and "nsubj" in token.dep_ and token.lower_ in pronoun_counts:
+            pronoun_counts[token.lower_] += 1
+
+    if pronoun_counts["il"] > pronoun_counts["elle"]:
+        gender.extend(["Masc", "Masc"])
+        gender_markers.append("il (pronom majoritaire)")
+    elif pronoun_counts["elle"] > pronoun_counts["il"]:
+        gender.extend(["Fem", "Fem"])
+        gender_markers.append("elle (pronom majoritaire)")
+
     Counter_gender = Counter(gender)
     res = resolve_gender(Counter_gender)
 
     if res in ("Neutre", "Ambigu"):
-        counts = {"il": 0, "elle": 0}
-        for token in doc:
-            if token.pos_ == "PRON" and "nsubj" in token.dep_ and token.lower_ in counts:
-                counts[token.lower_] += 1
-
-        if counts["il"] > counts["elle"]:
+        if pronoun_counts["il"] > pronoun_counts["elle"]:
             res = "Masc"
-        elif counts["elle"] > counts["il"]:
+        elif pronoun_counts["elle"] > pronoun_counts["il"]:
             res = "Fem"
 
     return res, Counter_gender, gender_markers
+
 
 def apply_gender_detection(txts_path):
     """Apply gender detection system (from function get_gender and get_gender_from_names) on the generations contained in a CSV file and append
@@ -176,4 +247,3 @@ def apply_gender_detection(txts_path):
     })
 
     return df_out
-
