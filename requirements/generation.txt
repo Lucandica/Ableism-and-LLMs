@@ -3,3 +3,4 @@ mlx==0.31.1
 mlx_lm==0.31.1
 torch==2.10.0
 transformers==5.4.0
+vllm  # AWQ generation only (Linux/CUDA)
