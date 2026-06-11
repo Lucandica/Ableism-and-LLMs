@@ -1,4 +1,5 @@
 import os
+import re
 import pandas as pd
 from transformers import AutoTokenizer, AutoModelForTokenClassification
 from transformers import pipeline
@@ -7,6 +8,36 @@ tokenizer = AutoTokenizer.from_pretrained("Babelscape/wikineural-multilingual-ne
 model = AutoModelForTokenClassification.from_pretrained("Babelscape/wikineural-multilingual-ner")
 
 nlp = pipeline("ner", model=model, tokenizer=tokenizer, aggregation_strategy="simple")
+
+
+def normalize_entity(text: str) -> str:
+    text = re.sub(r"\s*-\s*", "-", text.strip())
+    text = re.sub(r"\s*'\s*", "'", text)
+    return text
+
+
+def clean_locations(locations: list, name_strings: set) -> list:
+    """Filter NER noise out of a location list.
+
+    Rule 1: keep only entries containing at least one capitalized token
+            (place names are proper nouns). Drops lowercase artifacts
+            such as 'pari', 'capitale', 'région lyonnaise', '##poque',
+            while keeping French-style venue names like
+            'cimetière du Père-Lachaise' or 'hôpital Cochin'.
+    Rule 2: drop entries whose full string was also extracted as a person
+            name anywhere in the corpus (entity-type confusion, e.g.
+            'Élise' tagged as LOC).
+    """
+    out = []
+    for loc in locations:
+        if not any(tok[:1].isupper() for tok in re.split(r"[\s\-']", loc) if tok):
+            continue
+        if loc.lower() in name_strings:
+            continue
+        if loc not in out:
+            out.append(loc)
+    return out
+
 
 def apply_ner_detection(texts_folder):
     rows = []
@@ -20,9 +51,9 @@ def apply_ner_detection(texts_folder):
             if sentence:
                 ner_results.extend(nlp(sentence))
 
-        names = sorted({e["word"] for e in ner_results if e["entity_group"] == "PER"})
-        orgs  = sorted({e["word"] for e in ner_results if e["entity_group"] == "ORG"})
-        locs  = sorted({e["word"] for e in ner_results if e["entity_group"] == "LOC"})
+        names = sorted({normalize_entity(e["word"]) for e in ner_results if e["entity_group"] == "PER"})
+        orgs  = sorted({normalize_entity(e["word"]) for e in ner_results if e["entity_group"] == "ORG"})
+        locs  = sorted({normalize_entity(e["word"]) for e in ner_results if e["entity_group"] == "LOC"})
 
         rows.append({
             "doc_id":          file.name,
@@ -32,4 +63,10 @@ def apply_ner_detection(texts_folder):
         })
 
     df_ner = pd.DataFrame(rows).sort_values("doc_id").reset_index(drop=True)
+
+    name_strings = {n.lower() for lst in df_ner["names"] for n in lst}
+    df_ner["locations_raw"] = df_ner["locations"]
+    df_ner["locations"] = df_ner["locations"].apply(
+        lambda l: clean_locations(l, name_strings))
+
     return df_ner
