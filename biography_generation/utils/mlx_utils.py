@@ -2,8 +2,8 @@ from utils.common import get_inputs, parse_json_response
 from mlx_lm.sample_utils import make_sampler, make_logits_processors
 from mlx_lm import load, generate
 
-def load_model_mlx(model_id: str):
-        return load(model_id["mlx"])
+def load_model_mlx(model_cfg: str):
+        return load(model_cfg["mlx"])
 
 def define_parameters(params: dict):
     sampler = make_sampler(

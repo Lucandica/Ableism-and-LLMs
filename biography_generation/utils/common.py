@@ -4,7 +4,7 @@ import os
 
 
 def get_inputs(tokenizer, user_prompt: str, system_prompt: str = None, enable_thinking: bool = None):
-    """Helper function for input formatting"""
+    """Function to format messages into chat template"""
 
     messages = []
 

@@ -2,9 +2,9 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from utils.common import get_inputs, parse_json_response
 
-def load_model_torch(model_id: str):
-    tokenizer = AutoTokenizer.from_pretrained(model_id["torch"])
-    model = AutoModelForCausalLM.from_pretrained(model_id["torch"], dtype=torch.float16, device_map="auto")
+def load_model_torch(model_cfg: str):
+    tokenizer = AutoTokenizer.from_pretrained(model_cfg["torch"])
+    model = AutoModelForCausalLM.from_pretrained(model_cfg["torch"], dtype=torch.float16, device_map="auto")
     return model, tokenizer
 
 

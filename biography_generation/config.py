@@ -14,8 +14,7 @@ QWEN3_PARAMS = {
     "top_k": 20,
 }
 
-# Models import depending on technique used (mlx or torch)
-
+# Models import depending on technique used (mlx, awq or torch)
 LLAMA3 = {
     "awq": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
     "mlx": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
