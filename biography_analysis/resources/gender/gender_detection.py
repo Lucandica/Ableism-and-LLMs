@@ -6,8 +6,12 @@ import json
 import pandas as pd
 from collections import Counter
 import spacy
+from pathlib import Path
 
-RESOURCES_GENDER_FOLDER = "resources/gender"
+BASE_DIR = Path(__file__).resolve().parent
+PROJECT_DIR = BASE_DIR.parents[1]
+
+RESOURCES_GENDER_FOLDER = BASE_DIR
 
 nlp = spacy.load("fr_dep_news_trf")
 
@@ -83,10 +87,10 @@ def get_gender(text, details=False):
     doc = nlp(text)
 
     #list of gender-neutral (épicène) job titles from DELA, with Profession:fs:ms, to check and filter out if they're identified as Masc when used without a masc DET
-    with open(f"{RESOURCES_GENDER_FOLDER}/epicene_fr.json", encoding="utf-8") as f: #MODIFIED: path to file
+    with open(f"{RESOURCES_GENDER_FOLDER}/epicene_fr.json", encoding="utf-8") as f:
         epicene_jobs = json.load(f)
 
-    with open(f"{RESOURCES_GENDER_FOLDER}/lexical_res_P3_fr.json", encoding="utf-8") as f: #MODIFIED: path to file
+    with open(f"{RESOURCES_GENDER_FOLDER}/lexical_res_P3_fr.json", encoding="utf-8") as f:
         agents_hum = json.load(f)
 
     # Removing nouns referring to relatives or close contacts that often appear (in

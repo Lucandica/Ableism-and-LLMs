@@ -12,8 +12,8 @@ DISABILITIES = {
         # https://fondationordredemalte.org/liste-des-handicaps-reconnus-comprendre-accompagner-inclure/
         # https://www.education.gouv.fr/handicap-tous-concernes-99935
         # https://bnau.fr/les-acronymes-du-handicap/
-        "handicap moteur", "déficience motrice", "membre inférieur", "membre supérieur", "rhumatisme", "arthrose", "hémiplégie", "hémiplégique", "paraplégie",
-        "paraplégique", "tétraplégie", "tétraplégique", "lombalgie", "TMS", "tms", "trouble musculo-squelettique", "malformation", "paralysie", "paralysé",
+        "handicap moteur", "déficience motrice", "membre inférieur", "membre supérieur", "membres inférieurs", "membres supérieurs", "rhumatisme", "arthrose", "hémiplégie", "hémiplégique", "paraplégie",
+        "paraplégique", "tétraplégie", "tétraplégique", "quadriplégique", "quadriplégie", "lombalgie", "TMS", "tms", "trouble musculo-squelettique", "malformation", "paralysie", "paralysé",
         "AVC", "accident vasculaire cérébral", "amputation", "amputé", "infirmité motrice cérébrale", "IMC", "diplégie", "diplégique", "hernie discale",
     ],
  
@@ -81,10 +81,11 @@ DISABILITIES = {
     [
         # https://handicap.agriculture.gouv.fr/les-grandes-familles-ou-typologies-de-handicap-a231.html
         # https://fr.wikipedia.org/wiki/Maladie_neuro-%C3%A9volutive#Les_maladies_neurod%C3%A9g%C3%A9n%C3%A9ratives
-        # Source : https://fr.wikipedia.org/wiki/Maladie_neuro-%C3%A9volutive
-        # Source : https://www.inserm.fr/dossier/mucoviscidose/
+        # https://fr.wikipedia.org/wiki/Maladie_neuro-%C3%A9volutive
+        # https://www.inserm.fr/dossier/mucoviscidose/
+        # https://www.logiadapt.fr/blog/maladies-neurologiques
         "maladie chronique", "diabète", "hémophilie", "hémophile", "sida", "VIH", "cancer", "hyperthyroïdie", "hypertension artérielle", "insuffisance cardiaque",
-        "eczéma", "épilepsie", "insuffisance rénale", "crohn", "polyarthrite", "arthrite", "hépatite", "fibromyalgie", "endométriose", "sclérose", "narcolepsie",
+        "eczéma", "épilepsie", "insuffisance rénale", "crohn", "polyarthrite", "arthrite", "hépatite", "fibromyalgie", "endométriose", "sclérose", "neuromyélite", "narcolepsie",
         "drépanocytose", "alzheimer", "parkinson", "athétose", "chorée",
         "mucoviscidose",
         # Maladies neurodégénératives
@@ -102,10 +103,11 @@ DISABILITIES = {
         # https://www.sciencedirect.com/science/article/abs/pii/S0003448721003954
         # https://www.inserm.fr/dossier/hemophilie/
         # https://www.inserm.fr/dossier/mucoviscidose/
+        # https://www.logiadapt.fr/blog/maladies-neurologiques
         "maladie génétique", "x fragile", "klinefelter", "triple x", "turner", "trisomie", "coronarienne", "spina bifida", "duchenne", "hypercholestérolémie",
         "hémochromatose", "neurofibromatose", "drépanocytose", "amylose", "adrénoleucodystrophie", "mitochondrial", "usher", "cri du chat", "maladie de dercum", "duane",
         "hémophilie", "hémophile", "phénylcétonurie", "vélocardiofacial", "mucoviscidose", "fibrose", "prader-willi", "hypothyroïdie", "williams-beuren", "swb", "mowat-wilson",
-        "ciliopathie"
+        "ciliopathie", "huntington", "myopathie",
     ],
 
 "aides":
@@ -125,6 +127,7 @@ DISABILITIES = {
     [
         # https://handicap.agriculture.gouv.fr/les-grandes-familles-ou-typologies-de-handicap-a231.html
         "handicap", "handicapé", "polyhandicap", "polyhandicapé", "plurihandicap", "plurihandicapé", "surhandicap", "surhandicapé",
+        "maladie rare", "maladie neurologique", "maladie",
     ],
 }
 
@@ -155,10 +158,8 @@ def normalize(word: str, reverse_lookup: dict = None) -> str:
 
 def category_of(hit, reverse_lookup=REVERSE_LOOKUP):
     """Resolve the disability category of a single detected term.
-
-    Exact match -> normalized (strips feminine/plural suffix) -> "syndrome de ..."
-    / "maladie de ..." extended forms. The hit is lowercased so it matches the
-    lowercase REVERSE_LOOKUP keys (handles acronyms such as TSA, LSF).
+    Exact match -> normalized (strips feminine/plural suffix) -> "syndrome de ..."/"maladie de ..." extended forms.
+    The hit is lowercased so it matches the lowercase REVERSE_LOOKUP keys (handles acronyms such as TSA, LSF).
     Returns None for genuinely unknown terms.
     """
     hit = hit.lower()
@@ -180,11 +181,10 @@ def get_categories(hits, reverse_lookup=REVERSE_LOOKUP):
         if cat is None:
             continue
         if cat == "autres termes":
-            has_autres_termes = True  # defer it
+            has_autres_termes = True
         elif cat not in seen:
             seen.append(cat)
 
-    # Only fall back to "autres termes" when no specific category was found
     if not seen and has_autres_termes:
         seen.append("autres termes")
 
@@ -203,7 +203,7 @@ def collect_hits(pattern, text):
         if extended_hit not in hits:
             hits.append(extended_hit)
 
-    # Normalize to base form and deduplicate (e.g. handicapé/handicapée → handicapé)
+
     seen: set[str] = set()
     normalized_hits: list[str] = []
     for raw in hits:

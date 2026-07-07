@@ -17,12 +17,12 @@ warnings.filterwarnings("ignore")
 #Constant directories
 BASE_DIR = Path().resolve()
 
-GENERATION_DIR = BASE_DIR.parent / "generated_biographies" # Directory containing the texts to analyse
-OUTPUT_DIR     = BASE_DIR / "outputs"  # Directory where outputs will be saved
+GENERATION_DIR = BASE_DIR.parent / "generated_biographies"
+OUTPUT_DIR     = BASE_DIR / "outputs"
 
-RESOURCES_DIR  = BASE_DIR / "resources" # Directory where the resources are contained
-COMPLEXITY_DIR = RESOURCES_DIR / "complexity_tool" # Directory were the resources for the complexity computation files are contained (DO NOT MODIFY)
-ALSI_DIR = COMPLEXITY_DIR / "ALSI-main" # DIrectory of the ALSI tool (DO NOT MODIFY)
+RESOURCES_DIR  = BASE_DIR / "resources"
+COMPLEXITY_DIR = RESOURCES_DIR / "complexity_tool"
+ALSI_DIR = COMPLEXITY_DIR / "ALSI-main" # Directory of the ALSI tool (DO NOT MODIFY)
 
 # Sheet merging helpers for complexity features
 
