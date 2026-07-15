@@ -17,7 +17,7 @@ Generated files follow the naming convention parsed by the analysis scripts (`re
 e.g.  mistral_v1_long_withdis_38_awq.txt
 ```
 
-The biographies are then analysed along several axes: representation (inferred gender, disability mentions and categories, named entities), the *malgré cela* ("despite that") narrative trope, and lexico-syntactic complexity.
+The biographies are then analysed along several axes: representation (inferred gender, disability mentions and categories, named entities), the *malgré* ("despite") narrative trope, and lexico-syntactic complexity.
 
 ## Project Structure
 
@@ -39,17 +39,21 @@ Ableism-and-LLMs/
 │   └── logs/                       # Cluster job logs and energy consumption log
 ├── biography_analysis/             # Analysis scripts, notebooks and resources
 │   ├── representation_analysis.py  # Gender + disability + NER detection over all biographies
-│   ├── trope_detection.py          # "Malgré cela" trope detection (spaCy dependency parsing)
+│   ├── trope_detection.py          # "Malgré" trope detection (spaCy dependency parsing)
 │   ├── complexity_statistics.py    # ALSI complexity features + statistical comparisons
-│   ├── biography_analysis.ipynb    # Statistics tables and plots from the detection results
-│   ├── gender_detection_original.ipynb  # Evaluation of gender detection (original code from 
-|   |                               #   Ducel et al. 2024 and modified) vs manual annotations
+│   ├── biography_analysis.ipynb    # Statistics tables, plots and statistical analyses
+|   |                               #   from the detection results
 │   ├── resources/
 │   │   ├── helper_functions.py     # doc_id parsing, Cohen's kappa, lists parsing
 │   │   ├── gender/                 # 3rd-person gender detection (adapted from Ducel et al., 2024)
-│   │   │                           #   + lexicons + manually annotated evaluation set
+│   │   │   │                       #   + lexicons
+│   │   │   └── gender_detection_evaluation/
+│   │   │       ├── gender_detection_benchmark.py     # Runs detection on the benchmark corpus
+│   │   │       ├── gender_detection_evaluation.ipynb # Detectors vs manual annotations
+│   │   │       ├── biographies_gender_benchmark/     # Held-out benchmark corpus (108 bios)
+│   │   │       └── *.csv                             # Manually annotated evaluation sets
 │   │   ├── disabilities/           # Lexicon-based disability detection and categorisation
-│   │   ├── name_entities/          # NER (Babelscape/wikineural-multilingual-ner)
+│   │   ├── named_entities/         # NER (Babelscape/wikineural-multilingual-ner)
 │   │   └── complexity_tool/
 │   │       ├── ALSI-main/          # ALSI tool (Loignon, 2021) — see Third-party tools below
 │   │       └── conversion.R        # Converts ALSI .Rds output to .xlsx
@@ -119,14 +123,12 @@ cd biography_analysis
 python representation_analysis.py
 ```
 
-**Trope detection** — detects occurrences of the _malgré cela_ ("despite that") construction across all biographies using spaCy dependency parsing (`fr_dep_news_trf`). For each match, it retrieves the preceding sentence and checks it for disability keyword hits. Results are saved to `biography_analysis/outputs/trope_detection.csv`.
+**Trope detection** — detects every occurrence of _malgré_ ("despite") across all biographies using spaCy dependency parsing (`fr_dep_news_trf`). For each match, it extracts the object phrase governed by _malgré_ (head token, lemma, POS and a short readable phrase), then retrieves the preceding sentence and checks it for disability keyword hits. Results are saved to `biography_analysis/outputs/trope_detection.csv`.
 
 ```bash
 cd biography_analysis
 python trope_detection.py
 ```
-
-*More contrastive expressions will be added later.*
 
 **Complexity statistics** — runs the ALSI tool (R) to extract lexico-syntactic complexity features, then compares them across categories (model, quantization technique, disability in prompt) using Wilcoxon tests with Benjamini–Hochberg correction and Cohen's d. Results are saved to `biography_analysis/outputs/biographies_stats_complexity.xlsx` (one sheet per grouping variable).
 
@@ -138,9 +140,15 @@ python complexity_statistics.py --csv path/to/features.csv  # skip ALSI, use exi
 
 This requires R and the ALSI dependencies (see Requirements above). Generated biographies must be placed in `biography_analysis/resources/complexity_tool/ALSI-main/corpus/biographies/` before running.
 
-**Results notebook** — `biography_analysis.ipynb` loads `gender_dis_ner_detection.csv` and produces the statistics tables and figures: disability category representation, gender representation and location representation, broken down by prompt condition, inferred gender, model and quantization technique. Plots are saved to `biography_analysis/outputs/plots/`.
+**Results notebook** — `biography_analysis.ipynb` gathers all the detection results and produces the statistics tables, figures and statistical analyses, broken down by prompt condition, inferred gender, model and quantization technique:
 
-**Gender detection evaluation** — `gender_detection_original.ipynb` evaluates the gender detection system against manual annotations (`resources/gender/original_gender_detection_annotated.csv`), comparing the original first-person detector from Ducel et al. (2024) with the third-person adaptation used here (classification report and confusion matrices).
+- *Representation analyses* (from `gender_dis_ner_detection.csv`): disability category, gender and location representation, with chi-squared tests of independence and per-category linear probability models estimating the effects of inferred gender, model and quantization on the probability that each disability category is mentioned.
+- *Tropes analysis* (from `trope_detection.csv`): distribution of the objects governed by _malgré_ and their relation to disability mentions in the preceding context.
+- *Complexity analyses* (from `biographies_stats_complexity.xlsx` and the ALSI features): overview of significant features per comparison, strongest effects, and distributions of selected features (word count, sentence length, MATTR, dependency depth, clausal density).
+
+Plots are saved to `biography_analysis/outputs/plots/`.
+
+**Gender detection evaluation** — in `resources/gender/gender_detection_evaluation/`. `gender_detection_benchmark.py` applies the third-person gender detector to a held-out benchmark of 108 newly generated biographies (`biographies_gender_benchmark/`: 3 models × 3 prompt versions × short/long × nodis/withdis × 3 runs), which were not used while developing the detector. `gender_detection_evaluation.ipynb` then compares the detectors against manual annotations (classification reports and confusion matrices): the original first-person detector from Ducel et al. (2024) vs the third-person adaptation used here, evaluated both on the 600-biography corpus (used during development) and on the held-out benchmark.
 
 ## Third-party tools
 
