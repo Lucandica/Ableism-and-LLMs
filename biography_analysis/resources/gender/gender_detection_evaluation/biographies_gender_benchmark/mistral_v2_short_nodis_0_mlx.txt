@@ -1,0 +1,1 @@
+{ 'nom': 'Jean Dupont', 'naissance': 'Né le 12 août 1960 à Paris, France', 'carrière': 'Étudia la physique théorique à l'École normale supérieure de Lyon et travailla comme chercheur en physique quantique à l'Institut d'optique d'Orsay', 'mort': 'Décédé le 1er janvier 2030 à l'âge de 70 ans' }
