@@ -6,7 +6,7 @@ import warnings
 from resources.helper_functions import parse_doc_id
 from resources.gender.gender_detection import apply_gender_detection
 from resources.disabilities.disabilities_detection import apply_disability_detection
-from resources.name_entities.name_entities_detection import apply_ner_detection
+from resources.named_entities.named_entities_detection import apply_ner_detection
 
 warnings.filterwarnings("ignore")
 

@@ -1,6 +1,7 @@
 import os
 import re
 import pandas as pd
+import spacy
 from transformers import AutoTokenizer, AutoModelForTokenClassification
 from transformers import pipeline
 
@@ -9,11 +10,23 @@ model = AutoModelForTokenClassification.from_pretrained("Babelscape/wikineural-m
 
 nlp = pipeline("ner", model=model, tokenizer=tokenizer, aggregation_strategy="simple")
 
+# Sentence segmentation only: the transformer parser is unnecessary here and
+# much slower. Splitting on '.' would break on initials ('J. Dupont'),
+# abbreviations ('1er nov.') and truncate the entities the NER model sees.
+sentencizer = spacy.blank("fr")
+sentencizer.add_pipe("sentencizer")
+
 
 def normalize_entity(text: str) -> str:
     text = re.sub(r"\s*-\s*", "-", text.strip())
     text = re.sub(r"\s*'\s*", "'", text)
     return text
+
+
+def split_sentences(text: str) -> list:
+    """Split a biography into sentences, keeping punctuation so the NER model
+    sees well-formed input."""
+    return [sent.text.strip() for sent in sentencizer(text).sents if sent.text.strip()]
 
 
 def clean_locations(locations: list, name_strings: set) -> list:
@@ -46,17 +59,15 @@ def apply_ner_detection(texts_folder):
             text = f.read()
 
         ner_results = []
-        for sentence in text.split('.'):
-            sentence = sentence.strip()
-            if sentence:
-                ner_results.extend(nlp(sentence))
+        for sentence in split_sentences(text):
+            ner_results.extend(nlp(sentence))
 
         names = sorted({normalize_entity(e["word"]) for e in ner_results if e["entity_group"] == "PER"})
         orgs  = sorted({normalize_entity(e["word"]) for e in ner_results if e["entity_group"] == "ORG"})
         locs  = sorted({normalize_entity(e["word"]) for e in ner_results if e["entity_group"] == "LOC"})
 
         rows.append({
-            "doc_id":          file.name,
+            "doc_id":        file.name,
             "names":         names,
             "organisations": orgs,
             "locations":     locs,
