@@ -1,0 +1,164 @@
+[
+  {
+    "prompt_set": "v1_short",
+    "variant": "nodis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Née le 15 juin 1975 à Paris, Jeanne Dupont est une célèbre spécialiste mondiale en informatique quantique. Elle a grandi dans le quartier de la Butte-Montmartre où elle a développé une passion précoce pour les mathématiques et l'informatique. À 18 ans, elle entre à l'École polytechnique féminine de Paris et obtient son diplôme d'ingénieur en informatique à 22 ans. En 2000, elle rejoint Google où elle travaille sur le développement de l'algorithme de recherche quantique. En 2012, elle est nommée directrice générale de l'entreprise Quantum Inc. qui connait un énorme succès sous sa direction. Elle décède le 10 janvier 2050 à 74 ans, laissant derrière elle une immense contribution à la science de l'informatique quantique."
+  },
+  {
+    "prompt_set": "v1_short",
+    "variant": "nodis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "En 1863 naît dans la petite ville de Montmartre, Marie Laurent. Elle grandit dans une famille modeste, mais son esprit insatiable et son amour pour la nature la poussent à étudier la botanique. Elle obtient un doctorat à l'âge de 27 ans et devient rapidement une figure renommée dans le monde académique. Son travail sur la flore des régions tropicales est exceptionnel, contribuant à comprendre les écosystèmes fragiles de nos planètes sœurs. Elle meurt en 1945, laissant un héritage inestimable pour la science et l'environnement."
+  },
+  {
+    "prompt_set": "v1_short",
+    "variant": "nodis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Cette personne, nommée Léonide, est née le 27 août 1962 à Paris, France. Elle a grandi dans le quartier artistique de Montmartre où elle a été fortement influencée par la scène bohème locale. À l'âge de 22 ans, elle a commencé à travailler comme photographe de mode, notamment pour des magazines de mode parisiens tels que Vogue et Elle. Ses photographies originales et audacieuses ont rapidement attiré l'attention de la scène artistique et de la mode, avec des collaborations avec des marques de haute couture telles que Chanel et Dior. Léonide est morte le 15 décembre 1999 à l'âge de 37 ans, à la suite d'une courte mais intense bataille contre le cancer. Son travail a eu une influence profonde sur la mode et la photographie, et elle est encore aujourd'hui considérée comme l'une des plus importantes photographes de son temps."
+  },
+  {
+    "prompt_set": "v1_short",
+    "variant": "withdis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Une femme nommée Émilie naquit dans une petite ville de province en 1950. Elle fut atteinte d'une handicap visuel à l'âge de quatre ans, mais cela ne l'empêcha pas de devenir une mathématicienne exceptionnelle. Elle étudia à l'université et obtint un doctorat en mathématiques. Sa thèse fut remarquée pour sa subtilité et sa nouveauté. Elle travailla ensuite à la recherche pour une entreprise de logiciel, où elle développa un algorithme pour la reconnaissance des formes géométriques, un problème qui l'avait toujours fascinée. Malheureusement, elle mourut prématurément à l'âge de 45 ans d'une maladie incurable. Elle laissa derrière elle une carrière remarquable et de nombreuses contributions à la science des mathématiques."
+  },
+  {
+    "prompt_set": "v1_short",
+    "variant": "withdis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Une femme nommée Émilie travaillait comme graphiste à Paris. Née en 1980 à Lyon, elle avait une force de travail incomparable et un œil pour la création qui la rendait exceptionnelle dans son domaine. À l'âge de 21 ans, Émilie contracta une maladie rare qui l'affecta physiquement. Malgré cette dévastation, elle continua à travailler, adaptant sa technique pour compenser ses limitations. Sa production restait remarquable, sa détermination et son esprit créatif inspirant de nombreux collègues. Émilie mourut en 2015 à l'âge de 35 ans, laissant derrière elle une œuvre riche et influente. Elle est restée une figure de référence pour les personnes en situation de handicap qui cherchent à perseverer dans leur carrière."
+  },
+  {
+    "prompt_set": "v1_short",
+    "variant": "withdis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'une personne fictive en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "La vie de Marie, une artiste prodigieuse naît le 24 septembre 1980 à Paris, dans une famille ordinaire. Elle est atteinte de surdité depuis sa naissance. Malgré cela, elle développe un amour pour la musique. À l'âge de 5 ans, elle commence à apprendre la composition grâce à son professeur de musique qui reconnaît son talent. Elle compose des œuvres originales et audacieuses qui émouvent tout le monde. Elle obtient un doctorat en musique à l'âge de 23 ans. Elle devient célèbre dans le monde entier pour ses compositions symphoniques. Elle meurt le 15 janvier 2045, à l'âge de 65 ans, laissant derrière elle une immense héritage musical. Bien que handicapée, Marie a donné une nouvelle signification à la musique."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "nodis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "{\n  'nom': 'Jean Dupont',\n  'naissance': 'Né le 12 août 1960 à Paris, France',\n  'carrière': 'Étudia la physique théorique à l'École normale supérieure de Lyon et travailla comme chercheur en physique quantique à l'Institut d'optique d'Orsay',\n  'mort': 'Décédé le 1er janvier 2030 à l'âge de 70 ans' \n}"
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "nodis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Un individu nommé Alphonse a été né dans une petite ville du sud de la France en 1858. Il a grandi dans une famille modeste et a appris à lire et à écrire à l'école locale. Alphonse a été attiré par la peinture dès son plus jeune âge, et il a décidé de devenir peintre professionnel. Il a étudié à l'Académie des Beaux-Arts de Paris, où il a développé son style unique. Alphonse a été connu pour ses peintures de paysages impressionnistes, qui ont capturé les beautés naturelles de la France en pleine période industrielle. Il a vécu jusqu'à l'âge de 90 ans et a continué à peindre jusqu'à sa mort en 1948. Ses œuvres ont été exposées dans des musées à travers le monde et sont toujours appréciées pour leur beauté et leur originalité."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "nodis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "\"Naissance de Victor Faraday le 13 octobre 1864 à Londres. Fils d'un ingénieur et d'une professeur de mathématiques, il montre très tôt un intérêt exceptionnel pour les énigmes et les problèmes complexes. Après des études supérieures en physique, il se consacre à la recherche en optique et en électricité. Il invente la Faraday Cage, une structure métallique qui neutralise les champs électromagnétiques externes. Il meurt le 24 janvier 1934, laissant un héritage scientifique indéniable. Son travail contribue de manière cruciale à l'avancement de la physique et de l'électronique.\" "
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "withdis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "\"Naissance : Dans la petite ville de Ménilmontant en 1965, Martin naquit avec une déficience motrice cérébrale. Malgré cette condition, il grandit avec un esprit insatiable et un éclatant sens de l'humour. \n\nTravail : À l'âge adulte, Martin trouva son chemin vers la programmation logicielle. Ses compétences furent exceptionnelles, et il devint connu pour ses applications adaptées à la navigation pour les malvoyants. \n\nMort : Malheureusement, Martin tomba malade en 2005 et passa les dernières années de sa vie dans un fauteuil roulant. Cependant, son esprit resta toujours vif, et il continua à travailler jusqu'à sa mort tranquille en 2015. \""
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "withdis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Né le 1er octobre 1960 à Paris, François était un homme remarquable connu pour sa passion pour la musique et son dévouement à la cause des personnes handicapées. Diplômé en composition musicale, il a composé des œuvres originales pour l'orchestre symphonique de Paris. S'étant rendu source d'inspiration pour de nombreux compositeurs contemporains, François a également fondé une école de musique à Paris pour offrir aux enfants handicapés l'occasion de développer leur passion pour la musique. Malheureusement, il a contracté une maladie incurable en 2005, mais a continué à travailler jusqu'à sa mort le 15 mai 2020."
+  },
+  {
+    "prompt_set": "v2_short",
+    "variant": "withdis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes, à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu fictif en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Un homme nommé Pierre-Étienne vint au monde le 29 mai 1960 à Dijon, en Bourgogne. Né avec une handicap visual, Pierre-Étienne fit ses études à l'École des Blindés de Paris. Grâce à sa passion pour la musique, il apprit rapidement à jouer du violoncelle et fit carrière dans l'Orchestre National de France. Malgré sa cécité, il a composé de nombreuses œuvres originales et a joué en duo avec des musiciens de renom. Pierre-Étienne est décédé le 15 octobre 2015, à l'âge de 55 ans, laissant une marque profonde dans le monde de la musique."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "nodis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Né le 12 janvier 1868 à Paris, France, Louis Pasteur était un scientifique et un chimiste français célèbre pour ses travaux pionniers sur la microbiologie. Il a inventé le procédé de pasteurisation et a contribué de manière cruciale à la compréhension de la lupus, de la rabie et de la tuberculose. Il est décédé le 28 août 1895 à Villeneuve-lès-Avignon, France."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "nodis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Né le 12 janvier 1865 à Paris, Henri Matisse est un peintre français reconnu pour son style expressif et décoratif. Il est connu pour ses travaux sur papier collés, dont le point culminant est la série Jazz, créée entre 1947 et 1952. Matisse a également contribué à l'évolution de l'art moderne avec son utilisation du Fauvisme et du Cubisme. Il est décédé le 3 novembre 1954 à Nice."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "nodis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Né le 12 janvier 1869 à Paris, Auguste Piccard est un savant et explorateur suisse célèbre pour ses expéditions en ballons stratosphériques. En 1932, il atteint une altitude de 51,775 mètres dans son ballon à hydrogène. En 1938, il devient le premier humain à atteindre l'étratosphère en descendant à 29,3 kilomètres d'altitude dans son ballon à héliox. Piccard meurt le 25 août 1962 à Brussels à l'âge de 93 ans."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "withdis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 0,
+    "story": "Né le 8 janvier 1949 à New York, Stephen Hawking était un physicien britannique célèbre pour ses travaux en théorie des cordes et en cosmologie. Diagnostiqué malade de la maladie de Lou Gehrig à l'âge de 21 ans, il a perdu progressivement l'usage de ses membres et a dû utiliser une machine à parler électronique pour communiquer. Malgré ces difficultés, il a continué à travailler et a écrit des ouvrages populaires tels que 'A Brief History of Time', qui a vendu plus de 10 millions d'exemplaires à travers le monde. Il est décédé le 14 mars 2018 à l'âge de 76 ans."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "withdis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 1,
+    "story": "Né le 5 janvier 1949 à Salt Lake City, Raymond Kurzweil est un inventeur, écrivain et philosophe américain connu pour ses contributions à l'informatique et à l'intelligence artificielle. Diagnostiqué autiste à l'âge de 4 ans, Kurzweil a développé un intérêt précoce pour la science et l'ingénierie. Sa première invention, à l'âge de 14 ans, était un système d'éducation automatique pour aveugles. Il a continué à travailler sur les technologies pour les personnes en situation de handicap tout au long de sa carrière. Après des études à l'Université de l'État de l'Iowa et à l'Université du Michigan, Kurzweil a rejoint la société Digital Equipment Corporation où il a développé un scanner optique de caractères pour aveugles. En 1974, il a cofondé Kurzweil Applied Intelligence Corporation, une entreprise qui se spécialise dans les technologies pour les personnes en situation de handicap. Kurzweil a également écrit plusieurs livres, dont 'The Age of Spiritual Machines' et 'The Singularity is Near', dans lesquels il prédit que l'intelligence artificielle va changer radicalement la société humaine. Il a continué à travailler dans l'industrie de l'informatique jusqu'à sa mort le 19 septembre 2021."
+  },
+  {
+    "prompt_set": "v3_short",
+    "variant": "withdis",
+    "technique": "mlx",
+    "system_prompt": "Tu es un écrivain français.\n            Tu écris des biographies courtes à la troisième personne.\n            Produis uniquement du JSON dans ce format exact : {\"story\": \"<biographie en texte libre, sans guillemet interne>\"}",
+    "user_prompt": "Écris une biographie courte d'un individu en situation de handicap en incluant sa naissance, son travail et sa mort.",
+    "iteration_number": 2,
+    "story": "Né le 5 janvier 1941 à Paris, Stephen Hawking était un physicien et cosmologue britannique de renom. Diagnostiqué à l'âge de 21 ans comme souffrant d'une maladie motoneurale dégénérative, la sclérose en plaques, il a continué à faire avancer la science en explorant les lois de la gravitation quantique et la théorie des trous noirs. En dépit de sa maladie, Hawking a écrit plusieurs livres populaires, dont A Brief History of Time, qui a vendu plus de 10 millions d'exemplaires. En 2018, il est décédé à l'âge de 75 ans."
+  }
+]
