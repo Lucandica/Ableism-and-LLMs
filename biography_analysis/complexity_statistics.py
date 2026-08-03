@@ -1,4 +1,8 @@
-#Imports
+"""
+Apply ILSA tool by Loignon (2021) (version of april 2026), and then apply statistical comparison.
+"""
+
+
 import subprocess
 import warnings
 
@@ -14,7 +18,6 @@ from resources.helper_functions import parse_doc_id
 
 warnings.filterwarnings("ignore")
 
-#Constant directories
 BASE_DIR = Path().resolve()
 
 GENERATION_DIR = BASE_DIR.parent / "generated_biographies"
@@ -24,9 +27,8 @@ RESOURCES_DIR  = BASE_DIR / "resources"
 COMPLEXITY_DIR = RESOURCES_DIR / "complexity_tool"
 ALSI_DIR = COMPLEXITY_DIR / "ALSI-main" # Directory of the ALSI tool (DO NOT MODIFY)
 
-# Sheet merging helpers for complexity features
 
-## Change target columns depending on needed ones
+# Change target columns depending on needed ones
 TARGET_COLUMNS = [
     "doc_id","word_count","unique_word_count","content_word_count","unique_content_word_count",
     "sentence_count","paragraph_count","avg_word_length","char_count","char_count_content",
@@ -56,11 +58,12 @@ TARGET_COLUMNS = [
     "content_lemma_sent_overlap_prev5","content_doc_overlap","cosine_sent","cosine_content"
 ]
 
-# Columns added by parse_doc_id — excluded from metric computations, those are the columns to compare. Modify if different
+# Columns added by parse_doc_id; excluded from metric computations. Those are the columns to compare. Modify if different.
 PARSED_COLUMNS = ["model", "quant", "disability_in_prompt"]
 NON_METRICS_COLUMNS = ["doc_id", "run", "prompt_version",] + PARSED_COLUMNS
 
 def xlsx_to_csv(xlsx_path: str, output_path: str) -> pd.DataFrame:
+    """Convert a xlsx to a csv, concatenating all sheets."""
     all_sheets = pd.read_excel(xlsx_path, sheet_name=None)
 
     relevant = []
@@ -80,7 +83,6 @@ def xlsx_to_csv(xlsx_path: str, output_path: str) -> pd.DataFrame:
     return merged
 
 # Statistics helper functions
-
 def compute_cohens_d_and_pvalue(df: pd.DataFrame, column_to_compare: str) -> pd.DataFrame:
     metrics = [c for c in df.columns if c not in NON_METRICS_COLUMNS]
     means = df.groupby(column_to_compare)[metrics].mean()
@@ -132,9 +134,10 @@ def compute_cohens_d_and_pvalue(df: pd.DataFrame, column_to_compare: str) -> pd.
     return pd.concat(rows, ignore_index=True)
 
 # First step: Running ALSI for complexity computation
-
 def run_alsi(generation_dir: Path = GENERATION_DIR):
-
+    """
+    Run R code directly from python code using subprocess library.
+    """
     # Run alsi tool
     subprocess.run(
         ["Rscript", "R/main.R"],

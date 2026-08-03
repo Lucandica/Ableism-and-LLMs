@@ -1,4 +1,9 @@
-# Imports
+"""
+Applies disability-related keywords search, automatic gender attribution and ner search.
+Concatenate all output dfs from those methods into one representation df.
+"""
+
+
 from pathlib import Path
 import pandas as pd
 import warnings
@@ -24,6 +29,15 @@ NAME_ENTITIES_DIR = RESOURCES_DIR / "name_entities"
 
 
 def get_gender_dis_ner_representation(generation_dir:str=GENERATION_DIR):
+    """
+    Apply all representation-related functions.
+
+    Args:
+        generation_dir: folder containing all texts we want to do the representation of.
+
+    Returns:
+        gender_dis_ner_detection: a df where each row correspond to one text, and columns are all the one from the three representation methods.
+    """
     df_gender = apply_gender_detection(generation_dir)
     df_gender = parse_doc_id(df_gender)
 

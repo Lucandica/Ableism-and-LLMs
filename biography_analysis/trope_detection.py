@@ -1,3 +1,7 @@
+"""
+Functions use to detect where is "malgré" used, and in which context.
+"""
+
 import os
 import spacy
 import pandas as pd

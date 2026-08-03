@@ -1,3 +1,8 @@
+"""
+In this file, all the prompts created for our experiences, and mistral special prompt format function.
+To add a prompt, please follow the naming format. Then, when generating, use the name of the new prompt.
+"""
+
 PROMPTS = {
     "v1_short":
         {
@@ -123,4 +128,5 @@ PROMPTS = {
 
 
 def build_mistral_prompt(system_prompt:str, user_prompt: str):
+    "Adds the system prompt on top of the user prompt"
     return f"{system_prompt}\n{user_prompt}"

@@ -1,7 +1,14 @@
+"""
+Functions and constants used for disability keywords-detection in higher-scale experiment.
+"""
+
 import re
 import os
 import pandas as pd
 
+
+# Dictionary of all the keywords manually collected as well as the resources they were found on. The keywords are classified by categories of disabilities and diseases.
+# Three additional categories are added to collect general terms, accommodations and formulas.
 DISABILITIES = {
 # Categories from: https://handicap.agriculture.gouv.fr/les-grandes-familles-ou-typologies-de-handicap-a231.html
 
@@ -135,17 +142,22 @@ DISABILITIES = {
     ],
 }
 
-_ALL_WORDS = sorted({w.lower() for words in DISABILITIES.values() for w in words},
+# Get all words in the DISABILITIES dictionary
+ALL_WORDS = sorted({w.lower() for words in DISABILITIES.values() for w in words},
                     key=lambda w: (-len(w), w))
 
+# Apply word recognition pattern
 PATTERN = re.compile(r'(?i)(?<!\w)(?:'
-                     + '|'.join(rf"{re.escape(word)}e?s?" for word in _ALL_WORDS)
+                     + '|'.join(rf"{re.escape(word)}e?s?" for word in ALL_WORDS)
                      + r')(?!\w)')
 
+# Apply special pattern for formulation recognition
 SPECIAL_PATTERN = re.compile(r'(?i)(?<!\w)(?:syndrome\s+de|maladie\s+de)\s+\w+')
 
+# Formulations
 BASE_FORMULATIONS = ('syndrome de', 'maladie de')
 
+# Get the key of a value in the dictionary
 REVERSE_LOOKUP: dict[str, list[str]] = {}
 for _cat, _words in DISABILITIES.items():
     for _word in _words:
@@ -153,6 +165,7 @@ for _cat, _words in DISABILITIES.items():
         if _cat not in REVERSE_LOOKUP.setdefault(_key, []):
             REVERSE_LOOKUP[_key].append(_cat)
 
+# Find irregular feminisation or plural to normalize to masculin singular, when normalize() can not
 IRREGULAR = {
     "muette": "muet", "muettes": "muet",
     "dépressive": "dépressif", "dépressives": "dépressif",
@@ -185,6 +198,7 @@ def categories_of(hit, reverse_lookup=REVERSE_LOOKUP):
 
 
 def get_categories(hits, reverse_lookup=REVERSE_LOOKUP):
+    """Get the categories the keywords of a biography belongs to."""
     seen = []
     has_autres_termes = False
     for hit in hits:
@@ -199,6 +213,7 @@ def get_categories(hits, reverse_lookup=REVERSE_LOOKUP):
 
 
 def collect_hits(pattern, text):
+    """Search the biographies for keywords"""
     if pd.isna(text):
         return []
     hits = [hit.lower() for hit in pattern.findall(text)]
@@ -219,6 +234,16 @@ def collect_hits(pattern, text):
 
 
 def apply_disability_detection(folder):
+    """
+    Iterate through a folder of texts, and get all the keywords and categories of disabilities per texts.
+
+    Args: 
+        folder: A path to a folder with only txt files on which we want to detect disability keywords.
+
+    Returns:
+        df_dis: A dataframe where each row correspond to a text file,
+                and the name of the file, keywords detected and corresponding categories are columns.
+    """
     rows = []
     for file in (f for f in os.scandir(folder) if f.name.endswith('.txt')):
         with open(file.path, 'r', encoding='utf-8') as f:

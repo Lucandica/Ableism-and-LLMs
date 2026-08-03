@@ -219,6 +219,8 @@ def apply_gender_detection(txts_path):
 
         Returns:
             df_out (DataFrame): One row per doc_id with columns:
+                - doc_id           : name of the file
+                - bio              : the full text of the biography
                 - genre_auto       : detected gender ('Masc', 'Fem', 'Neutre', 'Ambigu')
                 - Detailed_counter : Counter with nb of markers per gender
                 - Detailed_markers : list of identified gender markers

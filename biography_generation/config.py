@@ -1,4 +1,10 @@
-# Models parameters
+"""
+Parameters used for the generation of the biographies in our experiences, and model importation links.
+To add a model or a link, please follow the same pattern.
+If a model is added, please verify that the parameters exist or add required parameters, and follow recommendation form model's developers.
+"""
+
+# Models parameters, based on recommended parameters of Llama and Qwen 
 BASE_PARAMS = {
     "temp": 0.7,
     "top_p": 0.90,
@@ -9,6 +15,7 @@ LLAMA3_PARAMS = BASE_PARAMS
 
 MISTRAL_PARAMS = BASE_PARAMS
 
+# Qwen has additional parameters, also based on recommendations
 QWEN3_PARAMS = {
     **BASE_PARAMS,
     "top_k": 20,
