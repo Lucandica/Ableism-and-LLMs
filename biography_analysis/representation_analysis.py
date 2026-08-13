@@ -27,6 +27,14 @@ GENDER_DIR        = RESOURCES_DIR / "gender"
 DISABILITIES_DIR  = RESOURCES_DIR / "disabilities"
 NAME_ENTITIES_DIR = RESOURCES_DIR / "name_entities"
 
+KEY = "doc_id"
+
+def merge_on_doc_id(left, right):
+    "Join all the representation analysis dataframe into one, based on doc_id"
+    extra = right.columns.difference(left.columns)
+    return left.merge(right[[KEY, *extra]], on=KEY, how="outer", validate="one_to_one")
+
+
 
 def get_gender_dis_ner_representation(generation_dir:str=GENERATION_DIR):
     """
@@ -38,19 +46,14 @@ def get_gender_dis_ner_representation(generation_dir:str=GENERATION_DIR):
     Returns:
         gender_dis_ner_detection: a df where each row correspond to one text, and columns are all the one from the three representation methods.
     """
-    df_gender = apply_gender_detection(generation_dir)
-    df_gender = parse_doc_id(df_gender)
+    df_gender = parse_doc_id(apply_gender_detection(generation_dir))
+    df_dis    = parse_doc_id(apply_disability_detection(generation_dir))
+    df_ner    = parse_doc_id(apply_ner_detection(generation_dir))
 
-    df_dis = apply_disability_detection(generation_dir)
-    df_dis = parse_doc_id(df_dis)
 
-    df_ner = apply_ner_detection(generation_dir)
-    df_ner = parse_doc_id(df_ner)
+    result = merge_on_doc_id(merge_on_doc_id(df_gender, df_dis), df_ner)
+    result = result.sort_values(KEY).reset_index(drop=True)
 
-    unique_df2 = df_dis.columns.difference(df_gender.columns)
-    unique_df3 = df_ner.columns.difference(df_gender.columns)
-
-    result = pd.concat([df_gender, df_dis[unique_df2], df_ner[unique_df3]], axis=1)
     result.to_csv(OUTPUT_DIR / "gender_dis_ner_detection.csv")
     
 
